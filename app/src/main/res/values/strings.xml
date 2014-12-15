@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">Color Game</string>
+    <string name="score">Score:</string>
+    <string name="zero">0</string>
+    <string name="content_description">This is just to stop the annoying yellow squiggly</string>
+
+</resources>

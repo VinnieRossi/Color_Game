@@ -28,7 +28,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends Activity implements OnTouchListener {
-
+    //TEST
 	Handler aHandler = new Handler();// loading screen - discs that line up and then fan out
 
 	private ImageView playScreen;

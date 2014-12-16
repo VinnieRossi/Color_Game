@@ -31,11 +31,10 @@ import java.util.Random;
 public class Game extends Activity implements View.OnTouchListener{
 
     private Handler aHandler = new Handler();
+    private Thread thread;
 
     private ImageView playScreen;
     private TextView score;
-
-
 
     private Canvas canvas;
     private Paint paint;
@@ -50,9 +49,10 @@ public class Game extends Activity implements View.OnTouchListener{
     //private int highScore = 0;
     private int prevScore;
     //private int life = 3;
+    private boolean shouldRun = true;
 
 
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_layout);
@@ -61,6 +61,11 @@ public class Game extends Activity implements View.OnTouchListener{
 
         playScreen = (ImageView) findViewById(R.id.playScreen);
         score = (TextView) findViewById(R.id.scoreValue);
+
+        SharedPreferences prefs = this.getSharedPreferences("myPrefsKey", Context.MODE_PRIVATE);
+        int oldHighScore = prefs.getInt("key", 0);
+        prevScore = oldHighScore;
+
 
         canvas = new Canvas();
         paint = new Paint();
@@ -92,64 +97,58 @@ public class Game extends Activity implements View.OnTouchListener{
         colors.add(getResources().getColor(R.color.blue));
         colors.add(getResources().getColor(R.color.violet));
 
-        new Thread(new Runnable() {
-            @Override
+        thread = new Thread() {
             public void run() {
-                while (true) {
+                while (shouldRun) {
                     try {
-                        Thread.sleep(1500/difficulty); // ms
-                        aHandler.post(new Runnable() {
-                            @Override
-                            public void run() {
+                        Thread.sleep(1500 / difficulty);
+                        int x = rn.nextInt(playScreen.getWidth());
+                        int y = rn.nextInt(playScreen.getHeight());
+                        int rad = rn.nextInt(100) + (25 - (3 * difficulty));
+                        int color = colors.get(rn.nextInt(colors.size()));
+                        int numTries = 0;
+                        boolean checkOne = false;
+                        boolean checkTwo = false;
+                        boolean checkThree = false;
 
-                                int x = rn.nextInt(playScreen.getWidth());
-                                int y = rn.nextInt(playScreen.getHeight());
-                                int rad = rn.nextInt(100) + (25 - (3 * difficulty));
-                                int color = colors.get(rn.nextInt(colors.size()));
-                                int numTries = 0;
-                                boolean checkOne = false;
-                                boolean checkTwo = false;
-                                boolean checkThree = false;
+                        while (!(checkOne && checkTwo && checkThree)) {
+                            x = rn.nextInt(playScreen.getWidth());
+                            y = rn.nextInt(playScreen.getHeight());
 
-                                while (!(checkOne && checkTwo && checkThree)) {
-                                    x = rn.nextInt(playScreen.getWidth());
-                                    y = rn.nextInt(playScreen.getHeight());
+                            checkOne = !(x < 120 || x > 960);
+                            checkTwo = !(y < 120 || y > 1480);
+                            checkThree = !(isInRectangle(x, y, rad));
 
-                                    checkOne = !(x < 120 || x > 960);
-                                    checkTwo = !(y < 120 || y > 1480);
-                                    checkThree = !(isInRectangle(x, y, rad));
-
-                                    if (numTries > 35) {
-                                        if (rad > 5) {
-                                            rad--;
-                                        } else {
-                                            //pointDecay();
-                                            System.out.println("You lose.");
-                                            //System.exit(0); //bad
-                                            //onStop();
-                                        }
-                                    }
-                                    numTries++;
+                            if (numTries > 35) {
+                                if (rad > 7) {
+                                    rad--;
+                                } else {
+                                    //pointDecay();
+                                    System.out.println("Inefficiency decay.");
+                                    onPause();
                                 }
+                            }
+                            numTries++;
+                        }
 
-                                paint.setStyle(Paint.Style.STROKE);
-                                paint.setColor(getResources().getColor(R.color.black));
-                                //paint.setColor(getResources().getColor(R.color.white)); // For testing
+                        paint.setStyle(Paint.Style.STROKE);
+                        paint.setColor(getResources().getColor(R.color.black));
+                        //paint.setColor(getResources().getColor(R.color.white)); // For testing
 
-                                Rect temp = new Rect(x - rad, y + rad, x + rad, y - rad);
-                                canvas.drawRect(temp, paint);
-                                rect.add(temp);
+                        Rect temp = new Rect(x - rad, y + rad, x + rad, y - rad);
+                        canvas.drawRect(temp, paint);
+                        rect.add(temp);
 
-                                paint.setStyle(Paint.Style.FILL);
-                                paint.setColor(color);
-                                canvas.drawCircle(x, y, rad, paint);
+                        paint.setStyle(Paint.Style.FILL);
+                        paint.setColor(color);
+                        canvas.drawCircle(x, y, rad, paint);
 
-                                // For image instead
-                                //Bitmap bt = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.color_wheel), 2*rad, 2*rad, false);
-                                //canvas.drawBitmap(bt, x-rad, y-rad, paint);
+                        // For image instead
+                        //Bitmap bt = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.color_wheel), 2*rad, 2*rad, false);
+                        //canvas.drawBitmap(bt, x-rad, y-rad, paint);
 
-                                // For target/sweet spot
-                                /*
+                        // For target/sweet spot
+                        /*
                                 paint.setColor(getResources().getColor(R.color.white));//target depend on circle color?
                                 canvas.drawCircle(x, y, rad/4, paint);
                                 paint.setColor(getResources().getColor(R.color.red));
@@ -158,17 +157,22 @@ public class Game extends Activity implements View.OnTouchListener{
                                 canvas.drawCircle(x, y, rad/8, paint);
                                 paint.setColor(getResources().getColor(R.color.red));
                                 canvas.drawCircle(x, y, rad/16, paint);
-                                */
+                        */
+
+                        runOnUiThread(new Runnable() {
+                            public void run() {
                                 playScreen.invalidate();
-                                //playScreen.setBackgroundColor(colors.get(rn.nextInt(colors.size())));
                             }
                         });
+
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
                 }
             }
-        }).start();
+        };
+
+        thread.start();
     }
 
     @Override
@@ -307,11 +311,6 @@ public class Game extends Activity implements View.OnTouchListener{
 
     protected void onPause() {
         super.onPause();
-        finish();
-    }
-
-    protected void onStop() {
-        super.onStop();
 
         SharedPreferences prefs = this.getSharedPreferences("myPrefsKey", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = prefs.edit();
@@ -320,10 +319,10 @@ public class Game extends Activity implements View.OnTouchListener{
         int score = Integer.parseInt(pointScore);
 
         if (score > prevScore) {
-            editor.putInt("key", score);
-            editor.commit();
+        editor.putInt("key", score);
+        editor.commit();
         }
-        //finish();
+        shouldRun = false;
+        finish();
     }
-
 }

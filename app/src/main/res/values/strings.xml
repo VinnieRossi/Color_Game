@@ -4,5 +4,6 @@
     <string name="score">Score:</string>
     <string name="zero">0</string>
     <string name="content_description">This is just to stop the annoying yellow squiggly</string>
+    <string name="highScore">High Score:</string>
 
 </resources>

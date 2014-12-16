@@ -8,6 +8,7 @@ import java.util.Random;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
@@ -21,6 +22,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.provider.MediaStore;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
@@ -28,12 +30,17 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends Activity implements OnTouchListener {
-    //TEST
-	Handler aHandler = new Handler();// loading screen - discs that line up and then fan out
+
+	Handler aHandler = new Handler();
 
 	private ImageView playScreen;
 	private TextView score;
     private TextView gameTitle;
+    private TextView quickPlay;
+    private TextView challenges;
+    private TextView settings;
+
+    private Game game;
 
 	private MediaPlayer media = new MediaPlayer();
 	private AssetManager assetMan;
@@ -59,6 +66,19 @@ public class MainActivity extends Activity implements OnTouchListener {
 		playScreen = (ImageView) findViewById(R.id.playScreen);
 		score = (TextView) findViewById(R.id.scoreValue);
         gameTitle = (TextView) findViewById(R.id.gameTitle);
+        quickPlay = (TextView) findViewById(R.id.quickPlay);
+        challenges = (TextView) findViewById(R.id.challenges);
+        settings = (TextView) findViewById(R.id.settings);
+
+        quickPlay.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Game.class);
+                //intent.putExtra("intercept this", variable);
+                MainActivity.this.startActivity(intent);
+            }
+        });
 
         SharedPreferences prefs = this.getSharedPreferences("myPrefsKey", Context.MODE_PRIVATE);
         int oldHighScore = prefs.getInt("key", 0);
@@ -97,7 +117,7 @@ public class MainActivity extends Activity implements OnTouchListener {
 		playScreen.setOnTouchListener(this);
 
         //intro?
-
+/*
 		new Thread(new Runnable() {
 			@Override
 			public void run() {
@@ -165,7 +185,7 @@ public class MainActivity extends Activity implements OnTouchListener {
                                 canvas.drawCircle(x, y, rad/8, paint);
                                 paint.setColor(getResources().getColor(R.color.red));
                                 canvas.drawCircle(x, y, rad/16, paint);
-                                */
+
 								playScreen.invalidate();
                                 //playScreen.setBackgroundColor(colors.get(rn.nextInt(colors.size())));
 							}
@@ -176,6 +196,7 @@ public class MainActivity extends Activity implements OnTouchListener {
 				}
 			}
 		}).start();
+        */
 	}
 	
 	@Override
@@ -291,15 +312,10 @@ public class MainActivity extends Activity implements OnTouchListener {
 		}
 		return false;
 	}
-	
-	protected void onPause() {
-		super.onPause();
-		finish();
-	}
 
 	protected void onStop() {
 		super.onStop();
-
+/*
         SharedPreferences prefs = this.getSharedPreferences("myPrefsKey", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = prefs.edit();
         String pointScore = (String) score.getText();
@@ -311,6 +327,7 @@ public class MainActivity extends Activity implements OnTouchListener {
             editor.commit();
         }
 		//finish();
+		*/
 	}
 
     public Rect getContainingRect(int x, int y) {
@@ -360,6 +377,7 @@ Power ups? Explosive hit, laser rain, etc
 A colorwheel that determines the right color to hit?
 Misclick/clicking when wrong color grays it out and requires 2 clicks now?
 Flash red/white then fade out
+Loading screen discs that fan out and line up
 
 MOVE THIS ALL OUT
 

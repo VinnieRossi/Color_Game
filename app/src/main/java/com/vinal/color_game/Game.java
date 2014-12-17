@@ -35,6 +35,11 @@ public class Game extends Activity implements View.OnTouchListener{
 
     private ImageView playScreen;
     private TextView score;
+    private ImageView x1;
+    private ImageView x2;
+    private ImageView x3;
+    private ImageView check1;
+    private ImageView check2;
 
     private Canvas canvas;
     private Paint paint;
@@ -45,27 +50,29 @@ public class Game extends Activity implements View.OnTouchListener{
 
     private List<Rect> rect;
     private List<Integer> colors;
+    private String currentSettings;
     private int difficulty = 1;
-    //private int highScore = 0;
     private int prevScore;
-    //private int life = 3;
+    private int life = 3;
     private boolean shouldRun = true;
-
 
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_layout);
-        Intent intent = getIntent();
-        //String value = intent.getStringExtra("intercept this");
 
         playScreen = (ImageView) findViewById(R.id.playScreen);
         score = (TextView) findViewById(R.id.scoreValue);
+        x1 = (ImageView) findViewById(R.id.x1);
+        x2 = (ImageView) findViewById(R.id.x2);
+        x3 = (ImageView) findViewById(R.id.x3);
+        check1 = (ImageView) findViewById(R.id.check1);
+        check2 = (ImageView) findViewById(R.id.check2);
+
 
         SharedPreferences prefs = this.getSharedPreferences("myPrefsKey", Context.MODE_PRIVATE);
-        int oldHighScore = prefs.getInt("key", 0);
-        prevScore = oldHighScore;
-
+        prevScore = prefs.getInt("key", 0);
+        currentSettings = prefs.getString("settings", "011");
 
         canvas = new Canvas();
         paint = new Paint();
@@ -85,17 +92,26 @@ public class Game extends Activity implements View.OnTouchListener{
         } catch (IOException e1) {
             e1.printStackTrace();
         }
-        rect = new ArrayList<Rect>();
 
+        rect = new ArrayList<Rect>();
 
         // Just for testing with circles
         final ArrayList<Integer> colors = new ArrayList<Integer>();
         colors.add(getResources().getColor(R.color.red));
+        colors.add(getResources().getColor(R.color.red_orange));
         colors.add(getResources().getColor(R.color.orange));
         colors.add(getResources().getColor(R.color.yellow));
-        colors.add(getResources().getColor(R.color.green_apple));
+        colors.add(getResources().getColor(R.color.green));
+        colors.add(getResources().getColor(R.color.turquoise)); //5
         colors.add(getResources().getColor(R.color.blue));
+        colors.add(getResources().getColor(R.color.violet_blue));
         colors.add(getResources().getColor(R.color.violet));
+        colors.add(getResources().getColor(R.color.indigo));
+        colors.add(getResources().getColor(R.color.white)); //10
+        colors.add(getResources().getColor(R.color.gray_cloud));
+        colors.add(getResources().getColor(R.color.gray));
+        colors.add(getResources().getColor(R.color.gray_dolphin));
+        colors.add(getResources().getColor(R.color.black_cat));
 
         thread = new Thread() {
             public void run() {
@@ -104,8 +120,8 @@ public class Game extends Activity implements View.OnTouchListener{
                         Thread.sleep(1500 / difficulty);
                         int x = rn.nextInt(playScreen.getWidth());
                         int y = rn.nextInt(playScreen.getHeight());
-                        int rad = rn.nextInt(100) + (25 - (3 * difficulty));
-                        int color = colors.get(rn.nextInt(colors.size()));
+                        int rad = rn.nextInt(100) + (45 - (5 * difficulty));//100, 25, 3
+                        int color = colors.get(rn.nextInt(colors.size()-5));
                         int numTries = 0;
                         boolean checkOne = false;
                         boolean checkTwo = false;
@@ -120,12 +136,16 @@ public class Game extends Activity implements View.OnTouchListener{
                             checkThree = !(isInRectangle(x, y, rad));
 
                             if (numTries > 35) {
-                                if (rad > 7) {
+                                if (rad > 20) {
                                     rad--;
                                 } else {
-                                    //pointDecay();
-                                    System.out.println("Inefficiency decay.");
-                                    onPause();
+                                    //start warning player
+                                    System.out.println("Game about to end");
+                                    if (numTries > 75) {
+                                        //color
+                                    } else if (numTries > 100) {
+                                        onPause();
+                                    }
                                 }
                             }
                             numTries++;
@@ -140,7 +160,16 @@ public class Game extends Activity implements View.OnTouchListener{
                         rect.add(temp);
 
                         paint.setStyle(Paint.Style.FILL);
-                        paint.setColor(color);
+                        if (getCurrentTheme() == 0) {
+                            paint.setColor(color);
+                        } else if (getCurrentTheme() == 1) {
+                            paint.setColor(colors.get(rn.nextInt(5) + 10));
+                        } else if (getCurrentTheme() == 2) {
+                            paint.setColor(colors.get(rn.nextInt(4)));
+                        } else if (getCurrentTheme() == 3) {
+                            paint.setColor(colors.get(rn.nextInt(5) + 5));
+                        }
+
                         canvas.drawCircle(x, y, rad, paint);
 
                         // For image instead
@@ -157,8 +186,8 @@ public class Game extends Activity implements View.OnTouchListener{
                                 canvas.drawCircle(x, y, rad/8, paint);
                                 paint.setColor(getResources().getColor(R.color.red));
                                 canvas.drawCircle(x, y, rad/16, paint);
-                        */
 
+                        */
                         runOnUiThread(new Runnable() {
                             public void run() {
                                 playScreen.invalidate();
@@ -182,29 +211,30 @@ public class Game extends Activity implements View.OnTouchListener{
             int x = (int) event.getX();
             int y = (int) event.getY();
 
+            int points = getRadius(getContainingRect(x, y)) - 25;
             if (isInCircle(x, y)) {
                 // right color check
-                int points = getRadius(getContainingRect(x, y));
-
-                if (media.isPlaying()) { // still probably not perfect
-                    media.stop();
-                    media.reset();
-                    String mp3File = "raw/popping.mp3";
-                    assetMan = getAssets();
-                    try {
-                        mp3Stream = assetMan.openFd(mp3File).createInputStream();
-                        media.setDataSource(mp3Stream.getFD());
-                        media.prepare();
-                    } catch (IOException e1) {
-                        e1.printStackTrace();
+                if (getSoundOn()) {
+                    if (media.isPlaying()) { // still probably not perfect
+                        media.stop();
+                        media.reset();
+                        String mp3File = "raw/popping.mp3";
+                        assetMan = getAssets();
+                        try {
+                            mp3Stream = assetMan.openFd(mp3File).createInputStream();
+                            media.setDataSource(mp3Stream.getFD());
+                            media.prepare();
+                        } catch (IOException e1) {
+                            e1.printStackTrace();
+                        }
+                        media.start();
                     }
                     media.start();
                 }
-                media.start();
                 addPoints(points);
                 removeCircle(x, y);
             } else {
-                removePoints();
+                removeLife();
                 // change to remove life
                 // play sound
             }
@@ -268,46 +298,73 @@ public class Game extends Activity implements View.OnTouchListener{
         pointScore = "" + scoreAsInt;
         score.setText(pointScore);
 
-        if (scoreAsInt > 250 && scoreAsInt < 1000) {
+        if (scoreAsInt > 500 && scoreAsInt < 1000) {
             difficulty = 2;
         } else if (scoreAsInt > 1000 && scoreAsInt < 2500) {
             difficulty = 3;
         } else if (scoreAsInt > 2500 && scoreAsInt < 10000) {
             difficulty = 4;
         } else if (scoreAsInt > 10000 && scoreAsInt < 25000) {
+            if (difficulty != 5) {
+                addLife();
+            }
             difficulty = 5;
         } else if (scoreAsInt > 25000) {
+            if (difficulty != 6) {
+                addLife();
+            }
             difficulty = 6;
         }
     }
 
-    public void removePoints() {
+    public void removeLife() {
 
-        /*
-        life -= 1;
-        switch(life ) { // clear background as black, that is now overlayed. will have to clear board and now make clearing this color
+        life -= 1; //change color of background?
+
+        switch (life) {
             case 0:
-                System.out.println("GAME OVER");
-                //playScreen.setBackgroundColor(getResources().getColor(R.color.white));
+                x3.setVisibility(View.VISIBLE);
                 break;
             case 1:
-                //playScreen.setBackgroundColor(getResources().getColor(R.color.persian_pink));
+                x2.setVisibility(View.VISIBLE);
                 break;
             case 2:
-                //playScreen.setBackgroundColor(getResources().getColor(R.color.cherry_blossom_pink));
+                x1.setVisibility(View.VISIBLE);
                 break;
             case 3:
-                playScreen.setBackgroundColor(getResources().getColor(R.color.black));
+                check1.setVisibility(View.INVISIBLE);
+                break;
+            case 4:
+                check2.setVisibility(View.INVISIBLE);
                 break;
             default:
+                onPause();
+                break;
         }
-        */
-
-        String pointScore = (String) score.getText();
-        int scoreAsInt = Integer.parseInt(pointScore) - (difficulty*100);
-        pointScore = "" + scoreAsInt;
-        score.setText(pointScore);
     }
+
+    public void addLife() {
+        life += 1;
+        switch (life) {
+            case 1:
+                x3.setVisibility(View.INVISIBLE);
+                break;
+            case 2:
+                x2.setVisibility(View.INVISIBLE);
+                break;
+            case 3:
+                x1.setVisibility(View.INVISIBLE);
+                break;
+            case 4:
+                check1.setVisibility(View.VISIBLE);
+                break;
+            case 5:
+                check2.setVisibility(View.VISIBLE);
+            default:
+                break;
+        }
+    }
+
 
     protected void onPause() {
         super.onPause();
@@ -319,10 +376,27 @@ public class Game extends Activity implements View.OnTouchListener{
         int score = Integer.parseInt(pointScore);
 
         if (score > prevScore) {
-        editor.putInt("key", score);
-        editor.commit();
+            editor.putInt("key", score);
+            editor.commit();
         }
         shouldRun = false;
         finish();
+    }
+
+    public void lostSequence() {
+        //use invisible fragment, turn visible and prompt/turn on buttons/etc
+        playScreen.setBackgroundColor(getResources().getColor(R.color.black)); //ask to play again
+    }
+
+    public boolean getSoundOn() {
+        return currentSettings.substring(1, 2).equals("1");
+    }
+
+    public boolean getPowerUpOn() {
+        return currentSettings.substring(2).equals("1");
+    }
+
+    public int getCurrentTheme() {
+        return Integer.parseInt(currentSettings.substring(0, 1));
     }
 }

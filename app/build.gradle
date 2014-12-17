@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.vinal.color_game"
-        minSdkVersion 8
+        minSdkVersion 11
         targetSdkVersion 19
     }
 

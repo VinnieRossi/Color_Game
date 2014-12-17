@@ -19,7 +19,7 @@
 <color name="aqua_marine">#7FFFD4</color>
 <color name="army_brown">#827B60</color>
 <color name="army_green">#4B5320</color>
-<color name="ash_grey">#B2BEB5</color>
+<color name="ash_gray">#B2BEB5</color>
 <color name="asparagus">#87A96B</color>
 <color name="atomic_tangerine">#FF9966</color>
 <color name="aureolin">#FDEE00</color>
@@ -38,7 +38,7 @@
 <color name="banana_yellow">#FFE135</color>
 <color name="bashful_pink">#C25283</color>
 <color name="basket_ball_orange">#F88158</color>
-<color name="battleship_grey">#848482</color>
+<color name="battleship_gray">#848482</color>
 <color name="bazaar">#98777B</color>
 <color name="bean_red">#F75D59</color>
 <color name="beaver">#9F8170</color>
@@ -123,7 +123,7 @@
  
 <color name="cadet">#536872</color>
 <color name="cadet_blue">#5F9EA0</color>
-<color name="cadet_grey">#91A3B0</color>
+<color name="cadet_gray">#91A3B0</color>
 <color name="cadillac_pink">#E38AAE</color>
 <color name="cadmium_green">#006B3C</color>
 <color name="cadmium_orange">#ED872D</color>
@@ -186,7 +186,7 @@
 <color name="construction_cone_orange">#F87431</color>
 <color name="cookie_brown">#C7A317</color>
 <color name="cool_black">#002E63</color>
-<color name="cool_grey">#8C92AC</color>
+<color name="cool_gray">#8C92AC</color>
 <color name="copper">#B87333</color>
 <color name="copper_rose">#996666</color>
 <color name="coquelicot">#FF3800</color>
@@ -257,7 +257,7 @@
 <color name="dark_turquoise">#3B9C9C</color>
 <color name="dark_violet">#842DCE</color>
 <color name="dartmouth_green">#00693E</color>
-<color name="davy_grey">#555555</color>
+<color name="davy_gray">#555555</color>
 <color name="debian_red">#D70A53</color>
 <color name="deep_carmine">#A9203E</color>
 <color name="deep_carmine_pink">#EF3038</color>
@@ -367,7 +367,7 @@
 <color name="green_thumb">#B5EAAA</color>
 <color name="green_yellow">#ADFF2F</color>
 <color name="greenish_blue">#307D7E</color>
-<color name="grey">#808080</color>
+<color name="gray">#808080</color>
 <color name="grullo">#A99A86</color>
 <color name="gunmetal">#2C3539</color>
 <color name="guppie_green">#00FF7F</color>
@@ -627,7 +627,7 @@
 <color name="pastel_red">#FF6961</color>
 <color name="pastel_violet">#CB99C9</color>
 <color name="pastel_yellow">#FDFD96</color>
-<color name="payne_grey">#536878</color>
+<color name="payne_gray">#536878</color>
 <color name="peach">#FFE5B4</color>
 <color name="peach_puff">#FFDAB9</color>
 <color name="peach_yellow">#FADFAD</color>

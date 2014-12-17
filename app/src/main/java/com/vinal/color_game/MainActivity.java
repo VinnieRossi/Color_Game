@@ -1,8 +1,10 @@
 package com.vinal.color_game;
 
 
-import java.lang.reflect.Array;
+
 import java.util.ArrayList;
+
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -10,7 +12,7 @@ import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.os.Bundle;
-import android.os.Handler;
+
 import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
 import android.view.View;
@@ -22,15 +24,15 @@ public class MainActivity extends Activity {
 	private ImageView playScreen;
 	private TextView score;
     private TextView gameTitle;
-    private TextView quickPlay;
-    private TextView challenges;
-    private TextView settings;
+    private TextView quickPlayText;
+    private TextView challengesText;
+    private TextView settingsText;
 
     private Canvas canvas;
 
     private int highScore;
-    private int oldScore;
-    private ArrayList<Integer> colors = new ArrayList<Integer>();;
+    private ArrayList<Integer> colors = new ArrayList<Integer>();
+
 
 	protected void onCreate(Bundle savedInstanceState) {
 
@@ -40,13 +42,14 @@ public class MainActivity extends Activity {
 		playScreen = (ImageView) findViewById(R.id.playScreen);
 		score = (TextView) findViewById(R.id.scoreValue);
         gameTitle = (TextView) findViewById(R.id.gameTitle);
-        quickPlay = (TextView) findViewById(R.id.quickPlay);
-        challenges = (TextView) findViewById(R.id.challenges);
-        settings = (TextView) findViewById(R.id.settings);
-
+        quickPlayText = (TextView) findViewById(R.id.quickPlayText);
+        challengesText = (TextView) findViewById(R.id.challengesText);
+        settingsText = (TextView) findViewById(R.id.settingsText);
 
 
         SharedPreferences prefs = this.getSharedPreferences("myPrefsKey", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = prefs.edit();
+
         highScore = prefs.getInt("key", 0);
         String oS = highScore + "";
         score.setText(oS);
@@ -66,26 +69,26 @@ public class MainActivity extends Activity {
 
         setTitle();
 
-        quickPlay.setOnClickListener(new View.OnClickListener() {
-
+        quickPlayText.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Game.class);
                 //intent.putExtra("intercept this", variable);
+                Intent intent = new Intent(MainActivity.this, Game.class);
                 MainActivity.this.startActivity(intent);
             }
         });
 
-        challenges.setOnClickListener(new View.OnClickListener() {
-
+        challengesText.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
+
 
             }
         });
 
-        settings.setOnClickListener(new View.OnClickListener() {
-
+        settingsText.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
 
+                Intent intent = new Intent(MainActivity.this, Settings.class);
+                MainActivity.this.startActivity(intent);
             }
         });
 	}
@@ -94,13 +97,9 @@ public class MainActivity extends Activity {
         super.onResume();
 
         SharedPreferences prefs = this.getSharedPreferences("myPrefsKey", Context.MODE_PRIVATE);
-        oldScore = prefs.getInt("key", 0);
-        String oS = oldScore + "";
+        highScore = prefs.getInt("key", 0);
+        String oS = highScore + "";
         score.setText(oS);
-    }
-
-    protected void onPause() {
-        super.onPause();
     }
 
     public void setTitle() {
@@ -126,12 +125,15 @@ IDEAS:
 I like the look of blank squares with white background
 Probably remove negative points for a life system, if you have full life at 10k, 25, 50k then you get a bonus. Or negative points scale?
 Possible sweet spot in circle/different noise
-Power ups? Explosive hit, laser rain, etc
+Power ups? Explosive hit, laser rain, every good hit pops another bubble, etc
 A colorwheel that determines the right color to hit?
 Misclick/clicking when wrong color grays it out and requires 2 clicks now?
 Flash red/white then fade out
 Loading screen discs that fan out and line up
 Dont let circles get too small
+Background color settings?
+achievements: double tap required, double speed, start with x circles, 1 life, etc
+
 
 MOVE THIS ALL OUT
 

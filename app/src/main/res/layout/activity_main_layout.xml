@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/test"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
@@ -60,7 +61,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Quick Play"
-        android:id="@+id/quickPlay"
+        android:id="@+id/quickPlayText"
         android:layout_below="@+id/gameTitle"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="80dp"
@@ -71,8 +72,8 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Challenges"
-        android:id="@+id/challenges"
-        android:layout_below="@+id/quickPlay"
+        android:id="@+id/challengesText"
+        android:layout_below="@+id/quickPlayText"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:textColor="@android:color/white" />
@@ -82,10 +83,11 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Settings"
-        android:id="@+id/settings"
-        android:layout_below="@+id/challenges"
+        android:id="@+id/settingsText"
+        android:layout_below="@+id/challengesText"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:textColor="@android:color/white" />
 
 </RelativeLayout>
+

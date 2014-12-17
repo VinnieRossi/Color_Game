@@ -18,6 +18,8 @@
             android:layout_marginTop="5dp"
             android:text="@string/score"
             android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
     </RelativeLayout>
 
     <RelativeLayout
@@ -43,5 +45,50 @@
         android:layout_height="fill_parent"
         android:layout_below="@id/relativeLayoutContainingScoreText"
         android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/x1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/red_x"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/x2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/red_x"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="35dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/x3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/red_x"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="65dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/check1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/green_check"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/check2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/green_check"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="35dp"
+        android:visibility="invisible" />
 
 </RelativeLayout>

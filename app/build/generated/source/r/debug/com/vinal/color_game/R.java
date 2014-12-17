@@ -30,7 +30,7 @@ public final class R {
         public static final int aqua_marine=0x7f040010;
         public static final int army_brown=0x7f040011;
         public static final int army_green=0x7f040012;
-        public static final int ash_grey=0x7f040013;
+        public static final int ash_gray=0x7f040013;
         public static final int asparagus=0x7f040014;
         public static final int atomic_tangerine=0x7f040015;
         public static final int aureolin=0x7f040016;
@@ -48,7 +48,7 @@ public final class R {
         public static final int banana_yellow=0x7f040022;
         public static final int bashful_pink=0x7f040023;
         public static final int basket_ball_orange=0x7f040024;
-        public static final int battleship_grey=0x7f040025;
+        public static final int battleship_gray=0x7f040025;
         public static final int bazaar=0x7f040026;
         public static final int bean_red=0x7f040027;
         public static final int beaver=0x7f040028;
@@ -132,7 +132,7 @@ public final class R {
         public static final int byzantium=0x7f040076;
         public static final int cadet=0x7f040077;
         public static final int cadet_blue=0x7f040078;
-        public static final int cadet_grey=0x7f040079;
+        public static final int cadet_gray=0x7f040079;
         public static final int cadillac_pink=0x7f04007a;
         public static final int cadmium_green=0x7f04007b;
         public static final int cadmium_orange=0x7f04007c;
@@ -195,7 +195,7 @@ public final class R {
         public static final int construction_cone_orange=0x7f0400b5;
         public static final int cookie_brown=0x7f0400b6;
         public static final int cool_black=0x7f0400b7;
-        public static final int cool_grey=0x7f0400b8;
+        public static final int cool_gray=0x7f0400b8;
         public static final int copper=0x7f0400b9;
         public static final int copper_rose=0x7f0400ba;
         public static final int coquelicot=0x7f0400bb;
@@ -265,7 +265,7 @@ public final class R {
         public static final int dark_turquoise=0x7f0400fb;
         public static final int dark_violet=0x7f0400fc;
         public static final int dartmouth_green=0x7f0400fd;
-        public static final int davy_grey=0x7f0400fe;
+        public static final int davy_gray=0x7f0400fe;
         public static final int debian_red=0x7f0400ff;
         public static final int deep_carmine=0x7f040100;
         public static final int deep_carmine_pink=0x7f040101;
@@ -357,22 +357,22 @@ public final class R {
         public static final int granny_smith_apple=0x7f040157;
         public static final int grape=0x7f040158;
         public static final int grapefruit=0x7f040159;
-        public static final int gray_asparagus=0x7f04015a;
-        public static final int gray_cloud=0x7f04015b;
-        public static final int gray_dolphin=0x7f04015c;
-        public static final int gray_goose=0x7f04015d;
-        public static final int gray_wolf=0x7f04015e;
-        public static final int grayish_turquoise=0x7f04015f;
-        public static final int green=0x7f040160;
-        public static final int green_apple=0x7f040161;
-        public static final int green_blue=0x7f040162;
-        public static final int green_onion=0x7f040163;
-        public static final int green_peas=0x7f040164;
-        public static final int green_snake=0x7f040165;
-        public static final int green_thumb=0x7f040166;
-        public static final int green_yellow=0x7f040167;
-        public static final int greenish_blue=0x7f040168;
-        public static final int grey=0x7f040169;
+        public static final int gray=0x7f04015a;
+        public static final int gray_asparagus=0x7f04015b;
+        public static final int gray_cloud=0x7f04015c;
+        public static final int gray_dolphin=0x7f04015d;
+        public static final int gray_goose=0x7f04015e;
+        public static final int gray_wolf=0x7f04015f;
+        public static final int grayish_turquoise=0x7f040160;
+        public static final int green=0x7f040161;
+        public static final int green_apple=0x7f040162;
+        public static final int green_blue=0x7f040163;
+        public static final int green_onion=0x7f040164;
+        public static final int green_peas=0x7f040165;
+        public static final int green_snake=0x7f040166;
+        public static final int green_thumb=0x7f040167;
+        public static final int green_yellow=0x7f040168;
+        public static final int greenish_blue=0x7f040169;
         public static final int grullo=0x7f04016a;
         public static final int gunmetal=0x7f04016b;
         public static final int guppie_green=0x7f04016c;
@@ -623,7 +623,7 @@ public final class R {
         public static final int pastel_red=0x7f040261;
         public static final int pastel_violet=0x7f040262;
         public static final int pastel_yellow=0x7f040263;
-        public static final int payne_grey=0x7f040264;
+        public static final int payne_gray=0x7f040264;
         public static final int peach=0x7f040265;
         public static final int peach_puff=0x7f040266;
         public static final int peach_yellow=0x7f040267;
@@ -961,22 +961,40 @@ public final class R {
     }
     public static final class drawable {
         public static final int color_wheel=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
+        public static final int green_check=0x7f020001;
+        public static final int ic_launcher=0x7f020002;
+        public static final int red_x=0x7f020003;
     }
     public static final class id {
-        public static final int challenges=0x7f070007;
-        public static final int gameTitle=0x7f070005;
+        public static final int back=0x7f070011;
+        public static final int challengesText=0x7f07000d;
+        public static final int check1=0x7f070008;
+        public static final int check2=0x7f070009;
+        public static final int gameTitle=0x7f07000b;
+        public static final int layoutContainingFragmentView=0x7f07000f;
         public static final int playScreen=0x7f070004;
-        public static final int quickPlay=0x7f070006;
+        public static final int powerUpValue=0x7f070017;
+        public static final int powerUpsText=0x7f070014;
+        public static final int quickPlayText=0x7f07000c;
         public static final int relativeLayoutContainingScoreText=0x7f070000;
         public static final int relativeLayoutContainingScoreValue=0x7f070002;
         public static final int scoreText=0x7f070001;
         public static final int scoreValue=0x7f070003;
-        public static final int settings=0x7f070008;
+        public static final int settingsScreen=0x7f070010;
+        public static final int settingsText=0x7f07000e;
+        public static final int soundValue=0x7f070015;
+        public static final int soundsText=0x7f070013;
+        public static final int test=0x7f07000a;
+        public static final int themeText=0x7f070012;
+        public static final int themeValue=0x7f070016;
+        public static final int x1=0x7f070005;
+        public static final int x2=0x7f070006;
+        public static final int x3=0x7f070007;
     }
     public static final class layout {
         public static final int activity_game_layout=0x7f030000;
         public static final int activity_main_layout=0x7f030001;
+        public static final int activity_settings_layout=0x7f030002;
     }
     public static final class string {
         public static final int app_name=0x7f050000;

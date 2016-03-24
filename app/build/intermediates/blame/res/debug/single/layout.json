@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\projects\\Color_Game\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_settings_layout.xml",
+        "source": "C:\\projects\\Color_Game\\app\\src\\main\\res\\layout\\activity_settings_layout.xml"
+    },
+    {
+        "merged": "C:\\projects\\Color_Game\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_game_layout.xml",
+        "source": "C:\\projects\\Color_Game\\app\\src\\main\\res\\layout\\activity_game_layout.xml"
+    },
+    {
+        "merged": "C:\\projects\\Color_Game\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main_layout.xml",
+        "source": "C:\\projects\\Color_Game\\app\\src\\main\\res\\layout\\activity_main_layout.xml"
+    }
+]

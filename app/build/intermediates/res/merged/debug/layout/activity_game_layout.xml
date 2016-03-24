@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutContainingScoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/scoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/score"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutContainingScoreValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/relativeLayoutContainingScoreText"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp" >
+
+        <TextView
+            android:id="@+id/scoreValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zero"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/playScreen"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/relativeLayoutContainingScoreText"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/x1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/red_x"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/x2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/red_x"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="35dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/x3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/red_x"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="65dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/check1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/green_check"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/check2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/green_check"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="35dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

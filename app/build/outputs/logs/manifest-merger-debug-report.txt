@@ -1,0 +1,72 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:1:1-40:12
+	package
+		ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:2:5-35
+		INJECTED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml
+		INJECTED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:4:5-30
+		INJECTED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml
+		INJECTED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:3:5-28
+		INJECTED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml
+		INJECTED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:1:11-69
+uses-sdk
+ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:6:5-8:7
+MERGED from [com.android.support:support-v4:20.0.0] C:\projects\Color_Game\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\AndroidManifest.xml:16:5-42
+	android:targetSdkVersion
+		INJECTED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml
+		INJECTED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:7:9-35
+		INJECTED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml
+		INJECTED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml
+application
+ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:10:5-38:19
+MERGED from [com.android.support:support-v4:20.0.0] C:\projects\Color_Game\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\AndroidManifest.xml:17:5-19
+	android:label
+		ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:13:9-41
+	android:allowBackup
+		ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:11:9-35
+	android:icon
+		ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:12:9-45
+	android:theme
+		ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:14:9-40
+activity#com.vinal.color_game.MainActivity
+ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:16:9-24:20
+	android:screenOrientation
+		ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:19:13-49
+	android:label
+		ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:18:13-45
+	android:name
+		ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:17:13-40
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:20:13-23:29
+action#android.intent.action.MAIN
+ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:21:17-68
+	android:name
+		ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:21:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:22:17-76
+	android:name
+		ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:22:27-74
+activity#com.vinal.color_game.Game
+ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:26:9-30:20
+	android:screenOrientation
+		ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:29:13-49
+	android:label
+		ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:28:13-45
+	android:name
+		ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:27:13-32
+activity#com.vinal.color_game.Settings
+ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:32:9-36:20
+	android:screenOrientation
+		ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:35:13-49
+	android:label
+		ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:34:13-45
+	android:name
+		ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:33:13-36

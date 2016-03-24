@@ -8,12 +8,15 @@ import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.graphics.Point;
 import android.graphics.Rect;
 import android.graphics.drawable.BitmapDrawable;
 import android.media.Image;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
+import android.view.Display;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
@@ -76,7 +79,17 @@ public class Game extends Activity implements View.OnTouchListener{
 
         canvas = new Canvas();
         paint = new Paint();
-        Bitmap bitmap = Bitmap.createBitmap(1080, 1600, Bitmap.Config.ARGB_8888);
+        //Bitmap bitmap = Bitmap.createBitmap(1080, 1600, Bitmap.Config.ARGB_8888);
+
+        Display display = getWindowManager().getDefaultDisplay();
+        Point size = new Point();
+        display.getSize(size);
+        Log.e("DIMENSIONS", "" + size.x + ", " + size.y);
+        // make it proper size of screen, then fit it to size given?
+        // right now, can crash if clicking NOT in canvas
+        // it checks x,y and finds it isnt in area
+
+        Bitmap bitmap = Bitmap.createBitmap(1415, 2115, Bitmap.Config.ARGB_8888);
         canvas.setBitmap(bitmap);
         playScreen.setImageBitmap(bitmap);
         playScreen.setBackgroundColor(getResources().getColor(R.color.black));
@@ -171,7 +184,6 @@ public class Game extends Activity implements View.OnTouchListener{
                         }
 
                         canvas.drawCircle(x, y, rad, paint);
-
                         // For image instead
                         //Bitmap bt = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.color_wheel), 2*rad, 2*rad, false);
                         //canvas.drawBitmap(bt, x-rad, y-rad, paint);
@@ -252,10 +264,13 @@ public class Game extends Activity implements View.OnTouchListener{
     }
 
     public boolean isInCircle(int x, int y) {
-
         Bitmap bitmap = ((BitmapDrawable) playScreen.getDrawable()).getBitmap();
-        //System.out.println("Color of pixel: " + bitmap.getPixel(x, y));
-        return bitmap.getPixel(x, y) != 0 && bitmap.getPixel(x, y) != -16777216; // Check if it's black
+        Log.e("X", "" + x);
+        Log.e("Y", "" + y);
+        Log.e("COLOR", "" + bitmap.getPixel(x, y));
+        return bitmap.getPixel(x, y) != 0 && bitmap.getPixel(x, y) != getResources().getColor(R.color.black);
+        //return bitmap.getPixel(x, y) != 0 && bitmap.getPixel(x, y) != -16777216; // Check if it's black
+
     }
 
     public Rect getContainingRect(int x, int y) {
@@ -283,7 +298,7 @@ public class Game extends Activity implements View.OnTouchListener{
         Rect toRemove = getContainingRect(x, y);
         paint.setColor(getResources().getColor(R.color.black));
         canvas.drawRect(toRemove.left, toRemove.top + 1, toRemove.right + 1, toRemove.bottom, paint);
-        rect.remove(getContainingRectIndex(toRemove));
+        rect.remove(getContainingRectIndex(toRemove)); // index out of bounds
         playScreen.invalidate();
     }
 

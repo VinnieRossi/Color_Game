@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\projects\\Color_Game\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\common_full_open_on_phone.png",
+        "source": "C:\\projects\\Color_Game\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\drawable-xhdpi\\common_full_open_on_phone.png"
+    },
+    {
         "merged": "C:\\projects\\Color_Game\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
         "source": "C:\\projects\\Color_Game\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
     }

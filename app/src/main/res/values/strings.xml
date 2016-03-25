@@ -1,9 +1,19 @@
 <resources>
-
+    <!--Main menu-->
     <string name="app_name">Color Game</string>
+    <string name="quickPlay">Quick Play</string>
+    <string name="challenges">Challenges</string>
+    <string name="settings">Settings</string>
+    <!--Game-->
     <string name="score">Score:</string>
     <string name="zero">0</string>
     <string name="content_description">This is just to stop the annoying yellow squiggly</string>
     <string name="highScore">High Score:</string>
-
+    <!--Settings-->
+    <string name="theme">Theme:</string>
+    <string name="sounds">Sounds:</string>
+    <string name="powerups">Power Ups:</string>
+    <string name="normal">Normal</string>
+    <string name="on">ON</string>
+    <string name="back">Back</string>
 </resources>

@@ -11,7 +11,6 @@ import android.graphics.Rect;
 import android.graphics.drawable.BitmapDrawable;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v4.content.ContextCompat;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -26,9 +25,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-/**
- * Created by Vinnie on 12/16/2014.
- */
 public class Game extends Activity implements View.OnTouchListener{
 
     private Thread thread;
@@ -102,6 +98,7 @@ public class Game extends Activity implements View.OnTouchListener{
         rect = new ArrayList<>();
 
         // create method that initialize list
+        // also create method that will return color if given string
         colors.add(ContextCompat.getColor(this, R.color.red));
         colors.add(ContextCompat.getColor(this, R.color.red_orange));
         colors.add(ContextCompat.getColor(this, R.color.orange));
@@ -118,7 +115,8 @@ public class Game extends Activity implements View.OnTouchListener{
         colors.add(ContextCompat.getColor(this, R.color.gray_dolphin));
         colors.add(ContextCompat.getColor(this, R.color.black_cat));
 
-        // startGame()
+        // startGame() = initializes thread and starts it
+        // remove variable declaration within thread
         thread = new Thread() {
             public void run() {
                 int x, y, rad, color, numTries;
@@ -153,7 +151,6 @@ public class Game extends Activity implements View.OnTouchListener{
                         // drawOutlineRectangle()
                         paint.setStyle(Paint.Style.STROKE);
                         paint.setColor(getResources().getColor(R.color.black));
-                        //paint.setColor(getResources().getColor(R.color.white)); // For testing
 
                         Rect temp = new Rect(x - rad, y + rad, x + rad, y - rad);
                         canvas.drawRect(temp, paint);
@@ -351,15 +348,15 @@ public class Game extends Activity implements View.OnTouchListener{
 
         if (score > prevScore) {
             editor.putInt("key", score);
-            editor.commit();
+            editor.apply();
         }
         shouldRun = false;
         finish();
     }
 
     private void lostSequence() {
-        //use invisible fragment, turn visible and prompt/turn on buttons/etc
-        playScreen.setBackgroundColor(getResources().getColor(R.color.black)); //ask to play again
+        //ask to play again? Y - reset thread. N - quit thread, goto main
+        playScreen.setBackgroundColor(ContextCompat.getColor(this, R.color.black));
     }
 
     private boolean getSoundOn() {

@@ -17,7 +17,7 @@ ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:1:1-36:12
 		ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:1:11-69
 application
 ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:6:5-34:19
-MERGED from [com.android.support:support-v4:23.0.0] C:\projects\Color_Game\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:24.0.0-alpha1] C:\projects\Color_Game\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0-alpha1\AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:9:9-41
 	android:allowBackup
@@ -62,7 +62,7 @@ ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:28:9-32:20
 		ADDED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml:29:13-36
 uses-sdk
 INJECTED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:support-v4:23.0.0] C:\projects\Color_Game\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:24.0.0-alpha1] C:\projects\Color_Game\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0-alpha1\AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
 		INJECTED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml
 		INJECTED from C:\projects\Color_Game\app\src\main\AndroidManifest.xml

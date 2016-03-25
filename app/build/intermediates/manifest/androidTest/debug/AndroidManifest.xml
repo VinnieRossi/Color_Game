@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.vinal.color_game.test">
+    package="com.vinal.color_game.test" >
 
-    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="23" />
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="23" />
 
-    <application>
+    <instrumentation
+        android:name="com.vinal.color_game.test.Instrumentation"
+        android:functionalTest="false"
+        android:handleProfiling="false"
+        android:label="Tests for com.vinal.color_game"
+        android:targetPackage="com.vinal.color_game" />
+
+    <application android:label="@string/app_name" >
         <uses-library android:name="android.test.runner" />
     </application>
 
-    <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="com.vinal.color_game"
-                     android:handleProfiling="false"
-                     android:functionalTest="false"
-                     android:label="Tests for com.vinal.color_game"/>
 </manifest>

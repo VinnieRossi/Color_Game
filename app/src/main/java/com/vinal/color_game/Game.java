@@ -101,7 +101,7 @@ public class Game extends Activity implements View.OnTouchListener{
 
         rect = new ArrayList<>();
 
-        // create method that initialize list, easier testing
+        // create method that initialize list
         colors.add(ContextCompat.getColor(this, R.color.red));
         colors.add(ContextCompat.getColor(this, R.color.red_orange));
         colors.add(ContextCompat.getColor(this, R.color.orange));
@@ -135,9 +135,6 @@ public class Game extends Activity implements View.OnTouchListener{
                             x = rn.nextInt(playScreen.getWidth());
                             y = rn.nextInt(playScreen.getHeight());
 
-                            // make decision based on number of tries
-                             checkGameState(numTries, rad);
-/*
                             if (numTries > 35) {
                                 if (rad > 20) {
                                     rad--;
@@ -151,7 +148,6 @@ public class Game extends Activity implements View.OnTouchListener{
                                 }
                             }
                             numTries++;
-                            */
                         }
 
                         // drawOutlineRectangle()
@@ -393,22 +389,6 @@ public class Game extends Activity implements View.OnTouchListener{
             }
         }
         return false;
-    }
-
-    private void checkGameState(int numTries, int rad) {
-        if (numTries > 35) {
-            if (rad > 20) {
-                rad--;
-            } else {
-                if (numTries > 100) {
-                    onPause();
-                } else if (numTries > 75) {
-                    // warn user about ending game
-                    Log.e("SYSTEM INFO", "GAME ABOUT TO END");
-                }
-            }
-        }
-        numTries++;
     }
 }
 

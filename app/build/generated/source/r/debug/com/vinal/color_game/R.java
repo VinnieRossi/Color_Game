@@ -982,11 +982,11 @@ public final class R {
         public static final int scoreValue=0x7f070003;
         public static final int settingsScreen=0x7f070010;
         public static final int settingsText=0x7f07000e;
-        public static final int soundValue=0x7f070015;
+        public static final int soundValue=0x7f070016;
         public static final int soundsText=0x7f070013;
         public static final int test=0x7f07000a;
         public static final int themeText=0x7f070012;
-        public static final int themeValue=0x7f070016;
+        public static final int themeValue=0x7f070015;
         public static final int x1=0x7f070005;
         public static final int x2=0x7f070006;
         public static final int x3=0x7f070007;

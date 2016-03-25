@@ -22,6 +22,7 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Back"
+            android:padding="15dp"
             android:id="@+id/back"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
@@ -38,8 +39,7 @@
             android:layout_marginTop="80dp"
             android:textColor="@android:color/white"
             android:layout_below="@+id/back"
-            android:layout_toLeftOf="@+id/back"
-            android:layout_toStartOf="@+id/back"/>
+            android:layout_toLeftOf="@+id/back" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -64,29 +64,8 @@
             android:textColor="@android:color/white"
             android:layout_below="@+id/soundsText"
             android:layout_toLeftOf="@+id/back"
-            android:layout_toStartOf="@+id/back"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="ON"
-            android:id="@+id/soundValue"
-            android:textColor="@android:color/white"
-            android:layout_alignTop="@+id/soundsText"
-            android:layout_alignLeft="@+id/themeValue"
-            android:layout_alignStart="@+id/themeValue"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="ON"
-            android:id="@+id/powerUpValue"
-            android:layout_alignTop="@+id/powerUpsText"
-            android:layout_alignLeft="@+id/soundValue"
-            android:layout_alignStart="@+id/soundValue"
-            android:textColor="@android:color/white"/>
+            android:layout_alignLeft="@+id/themeText"
+            android:layout_alignStart="@+id/themeText" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -94,10 +73,45 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Normal"
             android:id="@+id/themeValue"
+            android:gravity="top|center_horizontal"
             android:textColor="@android:color/white"
             android:layout_alignTop="@+id/themeText"
-            android:layout_toRightOf="@+id/back"
-            android:layout_toEndOf="@+id/back"/>
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/soundValue"
+            android:layout_alignStart="@+id/soundValue"
+            android:layout_above="@+id/soundValue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="ON"
+            android:id="@+id/soundValue"
+            android:gravity="top|center_horizontal"
+            android:textColor="@android:color/white"
+            android:layout_alignTop="@+id/soundsText"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/powerUpValue"
+            android:layout_alignStart="@+id/powerUpValue"
+            android:layout_above="@+id/powerUpValue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="ON"
+            android:id="@+id/powerUpValue"
+            android:gravity="top|center_horizontal"
+            android:textColor="@android:color/white"
+            android:layout_alignTop="@+id/powerUpsText"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/back"
+            android:layout_alignStart="@+id/back"
+            android:layout_alignBottom="@+id/powerUpsText" />
+
 
     </RelativeLayout>
 </LinearLayout>

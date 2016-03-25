@@ -6,6 +6,8 @@ android {
 
     defaultConfig {
         applicationId "com.vinal.color_game"
+        testApplicationId "com.vinal.color_game.test"
+        testInstrumentationRunner "com.vinal.color_game.test.Instrumentation"
         minSdkVersion 16
         targetSdkVersion 23
     }
@@ -19,5 +21,10 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:23.0.0'
+    compile 'com.android.support:support-v4:+'
+    androidTestCompile 'com.android.support:support-v4:+'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2'
+    androidTestCompile 'com.android.support.test:testing-support-lib:0.1'
+    androidTestCompile 'info.cukes:cucumber-android:1.2.4'
+    androidTestCompile 'info.cukes:cucumber-picocontainer:1.2.4'
 }

@@ -64,6 +64,7 @@
         android:id="@+id/quickPlayText"
         android:layout_below="@+id/gameTitle"
         android:layout_centerHorizontal="true"
+        android:padding="15dp"
         android:layout_marginTop="80dp"
         android:textColor="@android:color/white" />
 
@@ -76,6 +77,7 @@
         android:layout_below="@+id/quickPlayText"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
+        android:padding="15dp"
         android:textColor="@android:color/white" />
 
     <TextView
@@ -87,6 +89,7 @@
         android:layout_below="@+id/challengesText"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
+        android:padding="15dp"
         android:textColor="@android:color/white" />
 
 </RelativeLayout>

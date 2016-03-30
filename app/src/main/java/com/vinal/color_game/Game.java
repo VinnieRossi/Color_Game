@@ -31,11 +31,9 @@ public class Game extends Activity implements View.OnTouchListener{
 
     private ImageView playScreen;
     private TextView score;
-    private ImageView x1;
-    private ImageView x2;
-    private ImageView x3;
-    private ImageView check1;
-    private ImageView check2;
+    private ImageView lifeStatusImage1;
+    private ImageView lifeStatusImage2;
+    private ImageView lifeStatusImage3;
 
     private Canvas canvas;
     private Paint paint;
@@ -44,34 +42,44 @@ public class Game extends Activity implements View.OnTouchListener{
     private AssetManager assetMan;
     private FileInputStream mp3Stream;
 
-    private List<Rect> rect;
+    private GameState gameState;
+
+    private List<Rect> rect; // move
     private ArrayList<Integer> colors = new ArrayList<>();
     private String currentSettings;
-    private int difficulty = 1;
-    private int prevScore;
-    private int life = 3;
-    private volatile boolean shouldRun = true;
+    private int difficulty = 1; // move
+    private int prevScore; // remove
+    //int score
+    private int life = 3; // move
+    private volatile boolean shouldRun = true;// move
 
     protected void onCreate(Bundle savedInstanceState) {
     // **Have a game state object with important variables**
+        // Game state should NOT know about the UI, but SHOULD know about all game/state based actions
+
+        // UI will ask GS if it should continue drawing the game
+        // UI can grab rectangle to draw circle
+        // UI gets x,y coords of clicks
+
+        // GS will continue logic until user loses the game
+        // GS will know about the outline rectangles
+        // GS knows what to do with x,y coords of clicks
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_layout);
 
         playScreen = (ImageView) findViewById(R.id.playScreen);
         score = (TextView) findViewById(R.id.scoreValue);
-        x1 = (ImageView) findViewById(R.id.x1);
-        x2 = (ImageView) findViewById(R.id.x2);
-        x3 = (ImageView) findViewById(R.id.x3);
-        check1 = (ImageView) findViewById(R.id.check1);
-        check2 = (ImageView) findViewById(R.id.check2);
-        // fix unnecessary image views
+        lifeStatusImage1 = (ImageView) findViewById(R.id.lifeStatusImage1);
+        lifeStatusImage2 = (ImageView) findViewById(R.id.lifeStatusImage2);
+        lifeStatusImage3 = (ImageView) findViewById(R.id.lifeStatusImage3);
 
-        //create setup function?
+        //loadSettings()
         SharedPreferences prefs = this.getSharedPreferences("myPrefsKey", Context.MODE_PRIVATE);
         prevScore = prefs.getInt("key", 0);
         currentSettings = prefs.getString("settings", "011");
 
+        //setupGraphics()
         canvas = new Canvas();
         paint = new Paint();
         DisplayMetrics metrics = new DisplayMetrics();
@@ -84,6 +92,7 @@ public class Game extends Activity implements View.OnTouchListener{
         playScreen.setOnTouchListener(this);
 
 
+        // setupAudio()
         String mp3File = "raw/popping.mp3";
         assetMan = getAssets();
         try {
@@ -97,8 +106,8 @@ public class Game extends Activity implements View.OnTouchListener{
 
         rect = new ArrayList<>();
 
-        // create method that initialize list
-        // also create method that will return color if given string
+        // initializeUsableColors()
+        // create method that will return color if given string (possible with xml array?)
         colors.add(ContextCompat.getColor(this, R.color.red));
         colors.add(ContextCompat.getColor(this, R.color.red_orange));
         colors.add(ContextCompat.getColor(this, R.color.orange));
@@ -264,12 +273,13 @@ public class Game extends Activity implements View.OnTouchListener{
     }
 
     private void addPoints(int points) {
-
+        points *= -20;
         String pointScore = (String) score.getText();
         int scoreAsInt = Integer.parseInt(pointScore) + (difficulty*(120-points));
         pointScore = "" + scoreAsInt;
         score.setText(pointScore);
 
+        // move this
         if (scoreAsInt > 500 && scoreAsInt < 1000) {
             difficulty = 2;
         } else if (scoreAsInt > 1000 && scoreAsInt < 2500) {
@@ -295,19 +305,19 @@ public class Game extends Activity implements View.OnTouchListener{
 
         switch (life) {
             case 0:
-                x3.setVisibility(View.VISIBLE);
+                lifeStatusImage3.setImageResource(R.drawable.red_x);
                 break;
             case 1:
-                x2.setVisibility(View.VISIBLE);
+                lifeStatusImage2.setImageResource(R.drawable.red_x);
                 break;
             case 2:
-                x1.setVisibility(View.VISIBLE);
+                lifeStatusImage1.setImageResource(R.drawable.red_x);
                 break;
             case 3:
-                check1.setVisibility(View.INVISIBLE);
+                lifeStatusImage1.setImageResource(android.R.color.transparent);
                 break;
             case 4:
-                check2.setVisibility(View.INVISIBLE);
+                lifeStatusImage2.setImageResource(android.R.color.transparent);
                 break;
             default:
                 onPause();
@@ -319,19 +329,20 @@ public class Game extends Activity implements View.OnTouchListener{
         life += 1;
         switch (life) {
             case 1:
-                x3.setVisibility(View.INVISIBLE);
+                lifeStatusImage3.setImageResource(android.R.color.transparent);
                 break;
             case 2:
-                x2.setVisibility(View.INVISIBLE);
+                lifeStatusImage2.setImageResource(android.R.color.transparent);
                 break;
             case 3:
-                x1.setVisibility(View.INVISIBLE);
+                lifeStatusImage1.setImageResource(android.R.color.transparent);
                 break;
             case 4:
-                check1.setVisibility(View.VISIBLE);
+                lifeStatusImage1.setImageResource(R.drawable.green_check);
                 break;
             case 5:
-                check2.setVisibility(View.VISIBLE);
+                lifeStatusImage2.setImageResource(R.drawable.green_check);
+                break;
             default:
                 break;
         }

@@ -48,48 +48,27 @@
         android:layout_alignParentBottom="true" />
 
     <ImageView
-        android:id="@+id/x1"
+        android:id="@+id/lifeStatusImage1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/red_x"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="5dp"
-        android:visibility="invisible" />
+        />
 
     <ImageView
-        android:id="@+id/x2"
+        android:id="@+id/lifeStatusImage2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/red_x"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="35dp"
-        android:visibility="invisible" />
+         />
 
     <ImageView
-        android:id="@+id/x3"
+        android:id="@+id/lifeStatusImage3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/red_x"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="65dp"
-        android:visibility="invisible" />
-
-    <ImageView
-        android:id="@+id/check1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/green_check"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="5dp"
-        android:visibility="invisible" />
-
-    <ImageView
-        android:id="@+id/check2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/green_check"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="35dp"
-        android:visibility="invisible" />
+         />
 
 </RelativeLayout>

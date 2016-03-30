@@ -948,9 +948,18 @@
     <color name="zinnwaldite_brown">#2C1608</color>
     <color name="zombie_green">#54C571</color>
     <string name="app_name">Color Game</string>
+    <string name="back">Back</string>
+    <string name="challenges">Challenges</string>
     <string name="content_description">This is just to stop the annoying yellow squiggly</string>
     <string name="highScore">High Score:</string>
+    <string name="normal">Normal</string>
+    <string name="on">ON</string>
+    <string name="powerups">Power Ups:</string>
+    <string name="quickPlay">Quick Play</string>
     <string name="score">Score:</string>
+    <string name="settings">Settings</string>
+    <string name="sounds">Sounds:</string>
+    <string name="theme">Theme:</string>
     <string name="zero">0</string>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--

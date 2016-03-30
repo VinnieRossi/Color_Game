@@ -998,10 +998,19 @@ public final class R {
     }
     public static final class string {
         public static final int app_name=0x7f060000;
-        public static final int content_description=0x7f060001;
-        public static final int highScore=0x7f060002;
-        public static final int score=0x7f060003;
-        public static final int zero=0x7f060004;
+        public static final int back=0x7f060001;
+        public static final int challenges=0x7f060002;
+        public static final int content_description=0x7f060003;
+        public static final int highScore=0x7f060004;
+        public static final int normal=0x7f060005;
+        public static final int on=0x7f060006;
+        public static final int powerups=0x7f060007;
+        public static final int quickPlay=0x7f060008;
+        public static final int score=0x7f060009;
+        public static final int settings=0x7f06000a;
+        public static final int sounds=0x7f06000b;
+        public static final int theme=0x7f06000c;
+        public static final int zero=0x7f06000d;
     }
     public static final class style {
         /**  API 11 theme customizations can go here. 

@@ -18008,9 +18008,9 @@
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 19,
+                        "startOffset": 39,
                         "endColumn": 47,
-                        "endOffset": 62
+                        "endOffset": 82
                     }
                 }
             },
@@ -18019,17 +18019,17 @@
                     "startLine": 950,
                     "startColumn": 4,
                     "startOffset": 44852,
-                    "endColumn": 97,
-                    "endOffset": 44945
+                    "endColumn": 37,
+                    "endOffset": 44885
                 },
                 "from": {
                     "file": "C:\\projects\\Color_Game\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 17,
                         "startColumn": 4,
-                        "startOffset": 146,
-                        "endColumn": 97,
-                        "endOffset": 239
+                        "startOffset": 715,
+                        "endColumn": 37,
+                        "endOffset": 748
                     }
                 }
             },
@@ -18037,18 +18037,18 @@
                 "to": {
                     "startLine": 951,
                     "startColumn": 4,
-                    "startOffset": 44950,
+                    "startOffset": 44890,
                     "endColumn": 49,
-                    "endOffset": 44995
+                    "endOffset": 44935
                 },
                 "from": {
                     "file": "C:\\projects\\Color_Game\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 6,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 245,
+                        "startOffset": 138,
                         "endColumn": 49,
-                        "endOffset": 290
+                        "endOffset": 183
                     }
                 }
             },
@@ -18056,18 +18056,18 @@
                 "to": {
                     "startLine": 952,
                     "startColumn": 4,
-                    "startOffset": 45000,
-                    "endColumn": 40,
-                    "endOffset": 45036
+                    "startOffset": 44940,
+                    "endColumn": 97,
+                    "endOffset": 45033
                 },
                 "from": {
                     "file": "C:\\projects\\Color_Game\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 3,
+                        "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 68,
-                        "endColumn": 40,
-                        "endOffset": 104
+                        "startOffset": 331,
+                        "endColumn": 97,
+                        "endOffset": 424
                     }
                 }
             },
@@ -18075,18 +18075,18 @@
                 "to": {
                     "startLine": 953,
                     "startColumn": 4,
-                    "startOffset": 45041,
-                    "endColumn": 34,
-                    "endOffset": 45071
+                    "startOffset": 45038,
+                    "endColumn": 49,
+                    "endOffset": 45083
                 },
                 "from": {
                     "file": "C:\\projects\\Color_Game\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 110,
-                        "endColumn": 34,
-                        "endOffset": 140
+                        "startOffset": 430,
+                        "endColumn": 49,
+                        "endOffset": 475
                     }
                 }
             },
@@ -18094,10 +18094,181 @@
                 "to": {
                     "startLine": 954,
                     "startColumn": 4,
-                    "startOffset": 45076,
-                    "endLine": 960,
+                    "startOffset": 45088,
+                    "endColumn": 41,
+                    "endOffset": 45125
+                },
+                "from": {
+                    "file": "C:\\projects\\Color_Game\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 637,
+                        "endColumn": 41,
+                        "endOffset": 674
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 955,
+                    "startColumn": 4,
+                    "startOffset": 45130,
+                    "endColumn": 33,
+                    "endOffset": 45159
+                },
+                "from": {
+                    "file": "C:\\projects\\Color_Game\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 680,
+                        "endColumn": 33,
+                        "endOffset": 709
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 956,
+                    "startColumn": 4,
+                    "startOffset": 45164,
+                    "endColumn": 47,
+                    "endOffset": 45207
+                },
+                "from": {
+                    "file": "C:\\projects\\Color_Game\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 588,
+                        "endColumn": 47,
+                        "endOffset": 631
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 957,
+                    "startColumn": 4,
+                    "startOffset": 45212,
+                    "endColumn": 48,
+                    "endOffset": 45256
+                },
+                "from": {
+                    "file": "C:\\projects\\Color_Game\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 88,
+                        "endColumn": 48,
+                        "endOffset": 132
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 958,
+                    "startColumn": 4,
+                    "startOffset": 45261,
+                    "endColumn": 40,
+                    "endOffset": 45297
+                },
+                "from": {
+                    "file": "C:\\projects\\Color_Game\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 253,
+                        "endColumn": 40,
+                        "endOffset": 289
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 959,
+                    "startColumn": 4,
+                    "startOffset": 45302,
+                    "endColumn": 45,
+                    "endOffset": 45343
+                },
+                "from": {
+                    "file": "C:\\projects\\Color_Game\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 189,
+                        "endColumn": 45,
+                        "endOffset": 230
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 960,
+                    "startColumn": 4,
+                    "startOffset": 45348,
+                    "endColumn": 42,
+                    "endOffset": 45386
+                },
+                "from": {
+                    "file": "C:\\projects\\Color_Game\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 544,
+                        "endColumn": 42,
+                        "endOffset": 582
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 961,
+                    "startColumn": 4,
+                    "startOffset": 45391,
+                    "endColumn": 40,
+                    "endOffset": 45427
+                },
+                "from": {
+                    "file": "C:\\projects\\Color_Game\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 502,
+                        "endColumn": 40,
+                        "endOffset": 538
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 962,
+                    "startColumn": 4,
+                    "startOffset": 45432,
+                    "endColumn": 34,
+                    "endOffset": 45462
+                },
+                "from": {
+                    "file": "C:\\projects\\Color_Game\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 295,
+                        "endColumn": 34,
+                        "endOffset": 325
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 963,
+                    "startColumn": 4,
+                    "startOffset": 45467,
+                    "endLine": 969,
                     "endColumn": 12,
-                    "endOffset": 45362
+                    "endOffset": 45753
                 },
                 "from": {
                     "file": "C:\\projects\\Color_Game\\app\\src\\main\\res\\values\\styles.xml",
@@ -18113,12 +18284,12 @@
             },
             {
                 "to": {
-                    "startLine": 961,
+                    "startLine": 970,
                     "startColumn": 4,
-                    "startOffset": 45367,
-                    "endLine": 963,
+                    "startOffset": 45758,
+                    "endLine": 972,
                     "endColumn": 12,
-                    "endOffset": 45522
+                    "endOffset": 45913
                 },
                 "from": {
                     "file": "C:\\projects\\Color_Game\\app\\src\\main\\res\\values\\styles.xml",

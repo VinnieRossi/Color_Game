@@ -156,7 +156,7 @@ public class Game extends Activity implements View.OnTouchListener{
                         canvas.drawRect(temp, paint);
                         rect.add(temp);
 
-                        // setThemeColor()
+                        // getColorBasedOnTheme()..should be a one time run when initializing color array
                         paint.setStyle(Paint.Style.FILL);
                         if (getCurrentTheme() == 0) {
                             paint.setColor(color);

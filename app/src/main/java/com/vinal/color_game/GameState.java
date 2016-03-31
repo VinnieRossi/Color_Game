@@ -1,5 +1,10 @@
 package com.vinal.color_game;
 
+import android.graphics.Rect;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Vinnie on 3/29/2016.
  */
@@ -8,28 +13,23 @@ public class GameState {
     private int difficulty;
     private int life;
     private int score;
-    private volatile boolean shouldRun;
-    private final GameState instance = new GameState();
 
-    private GameState() {
+    private List<Rect> rectangles;
+
+
+    public GameState() {
         difficulty = 1;
         life = 3;
         score = 0;
-        shouldRun = true;
+        rectangles = new ArrayList<>();
     }
 
-    public GameState getInstance() { return instance; }
+    public int getLife() { return life; }
 
-    private int getLife() { return life; }
+    public int getDifficulty() { return difficulty; }
 
-    private int getDifficulty() { return difficulty; }
+    public int getScore() { return score; }
 
-    private int getScore() { return score; }
-
-    private boolean shouldRun() { return shouldRun; }
-
-    private void doGame() {
-
-    }
+    public List<Rect> getRectangleList() { return rectangles; }
 
 }

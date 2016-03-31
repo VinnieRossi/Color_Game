@@ -35,16 +35,19 @@ public class Game extends Activity implements View.OnTouchListener{
     private ImageView lifeStatusImage2;
     private ImageView lifeStatusImage3;
 
-    private Canvas canvas;
-    private Paint paint;
+    //private Canvas canvas;
+    //private Paint paint;
     private Random rn = new Random();
     private MediaPlayer media = new MediaPlayer();
     private AssetManager assetMan;
     private FileInputStream mp3Stream;
 
     private GameState gameState;
+    private GameLogic gameLogic;
+    private GameGraphics gameGraphics;
+    private Activity activity;
 
-    private List<Rect> rect; // move
+    //private List<Rect> rect; // move
     private ArrayList<Integer> colors = new ArrayList<>();
     private String currentSettings;
     private int difficulty = 1; // move
@@ -60,10 +63,12 @@ public class Game extends Activity implements View.OnTouchListener{
         // UI will ask GS if it should continue drawing the game
         // UI can grab rectangle to draw circle
         // UI gets x,y coords of clicks
+        // UI will get life total and show appropriate UI views
 
         // GS will continue logic until user loses the game
         // GS will know about the outline rectangles
         // GS knows what to do with x,y coords of clicks
+        // GS will know life total and report it to UI
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_layout);
@@ -74,55 +79,23 @@ public class Game extends Activity implements View.OnTouchListener{
         lifeStatusImage2 = (ImageView) findViewById(R.id.lifeStatusImage2);
         lifeStatusImage3 = (ImageView) findViewById(R.id.lifeStatusImage3);
 
-        //loadSettings()
-        SharedPreferences prefs = this.getSharedPreferences("myPrefsKey", Context.MODE_PRIVATE);
-        prevScore = prefs.getInt("key", 0);
-        currentSettings = prefs.getString("settings", "011");
 
-        //setupGraphics()
-        canvas = new Canvas();
-        paint = new Paint();
-        DisplayMetrics metrics = new DisplayMetrics();
-        getWindowManager().getDefaultDisplay().getMetrics(metrics);
-        Bitmap bitmap = Bitmap.createBitmap(metrics.widthPixels, metrics.heightPixels - 425, Bitmap.Config.ARGB_8888);
 
-        canvas.setBitmap(bitmap);
-        playScreen.setImageBitmap(bitmap);
-        playScreen.setBackgroundColor(ContextCompat.getColor(this, R.color.black));
+        activity = this;
+        gameState = new GameState();
+        gameLogic = new GameLogic(gameState);
+        gameGraphics = new GameGraphics(activity);
+
+        loadSettings();
+        gameGraphics.setupGraphics();
+        setupAudio();
+        initializeUsableColors(getCurrentTheme());
+
         playScreen.setOnTouchListener(this);
 
+        //rect = new ArrayList<>();
 
-        // setupAudio()
-        String mp3File = "raw/popping.mp3";
-        assetMan = getAssets();
-        try {
 
-            mp3Stream = assetMan.openFd(mp3File).createInputStream();
-            media.setDataSource(mp3Stream.getFD());//error after first try
-            media.prepare();
-        } catch (IOException e1) {
-            e1.printStackTrace();
-        }
-
-        rect = new ArrayList<>();
-
-        // initializeUsableColors()
-        // create method that will return color if given string (possible with xml array?)
-        colors.add(ContextCompat.getColor(this, R.color.red));
-        colors.add(ContextCompat.getColor(this, R.color.red_orange));
-        colors.add(ContextCompat.getColor(this, R.color.orange));
-        colors.add(ContextCompat.getColor(this, R.color.yellow));
-        colors.add(ContextCompat.getColor(this, R.color.green));
-        colors.add(ContextCompat.getColor(this, R.color.turquoise));
-        colors.add(ContextCompat.getColor(this, R.color.blue));
-        colors.add(ContextCompat.getColor(this, R.color.violet_blue));
-        colors.add(ContextCompat.getColor(this, R.color.violet));
-        colors.add(ContextCompat.getColor(this, R.color.indigo));
-        colors.add(ContextCompat.getColor(this, R.color.white));
-        colors.add(ContextCompat.getColor(this, R.color.gray_cloud));
-        colors.add(ContextCompat.getColor(this, R.color.gray));
-        colors.add(ContextCompat.getColor(this, R.color.gray_dolphin));
-        colors.add(ContextCompat.getColor(this, R.color.black_cat));
 
         // startGame() = initializes thread and starts it
         // remove variable declaration within thread
@@ -135,10 +108,10 @@ public class Game extends Activity implements View.OnTouchListener{
                         x = rn.nextInt(playScreen.getWidth());
                         y = rn.nextInt(playScreen.getHeight());
                         rad = rn.nextInt(100) + (45 - (5 * difficulty));//100, 25, 3
-                        color = colors.get(rn.nextInt(colors.size()-5));
+                        color = colors.get(rn.nextInt(colors.size()));
                         numTries = 0;
 
-                        while (xNotWithinBounds(x) || yNotWithinBounds(y) || haveOverlappingCircle(x, y, rad)) {
+                        while (gameLogic.xNotWithinBounds(x) || gameLogic.yNotWithinBounds(y) || gameLogic.haveOverlappingCircle(x, y, rad)) {
                             x = rn.nextInt(playScreen.getWidth());
                             y = rn.nextInt(playScreen.getHeight());
 
@@ -158,26 +131,19 @@ public class Game extends Activity implements View.OnTouchListener{
                         }
 
                         // drawOutlineRectangle()
-                        paint.setStyle(Paint.Style.STROKE);
-                        paint.setColor(getResources().getColor(R.color.black));
+                        gameGraphics.getPaint().setStyle(Paint.Style.STROKE);
+                        gameGraphics.getPaint().setColor(getResources().getColor(R.color.black));
 
+                        // have rectangle map with key and circle value
                         Rect temp = new Rect(x - rad, y + rad, x + rad, y - rad);
-                        canvas.drawRect(temp, paint);
-                        rect.add(temp);
+                        gameGraphics.getCanvas().drawRect(temp, gameGraphics.getPaint());
+                        gameState.getRectangleList().add(temp);
+                        //rect.add(temp);
 
-                        // getColorBasedOnTheme()..should be a one time run when initializing color array
-                        paint.setStyle(Paint.Style.FILL);
-                        if (getCurrentTheme() == 0) {
-                            paint.setColor(color);
-                        } else if (getCurrentTheme() == 1) {
-                            paint.setColor(colors.get(rn.nextInt(5) + 10));
-                        } else if (getCurrentTheme() == 2) {
-                            paint.setColor(colors.get(rn.nextInt(4)));
-                        } else if (getCurrentTheme() == 3) {
-                            paint.setColor(colors.get(rn.nextInt(5) + 5));
-                        }
-
-                        canvas.drawCircle(x, y, rad, paint);
+                        //drawCircle
+                        gameGraphics.getPaint().setStyle(Paint.Style.FILL);
+                        gameGraphics.getPaint().setColor(color);
+                        gameGraphics.getCanvas().drawCircle(x, y, rad, gameGraphics.getPaint());
 
                         runOnUiThread(new Runnable() {
                             public void run() {
@@ -197,13 +163,12 @@ public class Game extends Activity implements View.OnTouchListener{
 
     @Override
     public boolean onTouch(View view, MotionEvent event) {
-
         if (event.getAction() == MotionEvent.ACTION_UP) {
             int x = (int) event.getX();
             int y = (int) event.getY();
 
-            int points = getRadius(getContainingRect(x, y)) - 25;
-            if (isInCircle(x, y)) {
+            int points = gameLogic.getRadius(gameLogic.getContainingRect(x, y)) - 25;
+            if (isInCircle(x, y, gameGraphics.getPlayscreenBitmap())) {
                 // right color check
                 if (getSoundOn()) {
                     if (media.isPlaying()) { // still probably not perfect
@@ -234,13 +199,11 @@ public class Game extends Activity implements View.OnTouchListener{
     }
 
 
-    private boolean isInCircle(int x, int y) {
-        Bitmap bitmap = ((BitmapDrawable) playScreen.getDrawable()).getBitmap();
+    private boolean isInCircle(int x, int y, Bitmap bitmap) {
         return bitmap.getPixel(x, y) != 0 && bitmap.getPixel(x, y) != ContextCompat.getColor(this, R.color.black);
     }
-
+/*
     private Rect getContainingRect(int x, int y) {
-
         for (int i = 0; i < rect.size(); i++) {
             // contains doesn't seem to work..looks like y value is messed up
             if ((x > rect.get(i).left && x < rect.get(i).right) && (y > rect.get(i).bottom && y < rect.get(i).top)) {
@@ -258,18 +221,11 @@ public class Game extends Activity implements View.OnTouchListener{
         }
         return -1;
     }
-
+*/
     private void removeCircle(int x, int y) {
-
-        Rect toRemove = getContainingRect(x, y);
-        paint.setColor(getResources().getColor(R.color.black));
-        canvas.drawRect(toRemove.left, toRemove.top + 1, toRemove.right + 1, toRemove.bottom, paint);
-        rect.remove(getContainingRectIndex(toRemove)); // index out of bounds
-        playScreen.invalidate();
-    }
-
-    private int getRadius(Rect rect) {
-        return (rect.right - rect.left)/2;
+        Rect toRemove = gameLogic.getContainingRect(x, y);
+        gameLogic.removeCircle(x, y, toRemove);
+        gameGraphics.eraseCircle(x, y, toRemove);
     }
 
     private void addPoints(int points) {
@@ -300,7 +256,6 @@ public class Game extends Activity implements View.OnTouchListener{
     }
 
     private void removeLife() {
-
         life -= 1; //change color of background?
 
         switch (life) {
@@ -382,21 +337,61 @@ public class Game extends Activity implements View.OnTouchListener{
         return Integer.parseInt(currentSettings.substring(0, 1));
     }
 
-    private boolean xNotWithinBounds(int x) {
-        return x < 120 || x > 1320;
-    }
+    private void setupAudio() {
+        String mp3File = "raw/popping.mp3";
 
-    private boolean yNotWithinBounds(int y) {
-        return y < 120 || y > 2015;
-    }
-
-    private boolean haveOverlappingCircle(int x, int y, int radius) {
-        for (int i = 0; i < rect.size(); i++) {
-            if ((x > rect.get(i).left - radius && x < rect.get(i).right + radius) && (y > rect.get(i).bottom - radius && y < rect.get(i).top + radius)) {
-                return true;
-            }
+        assetMan = getAssets();
+        try {
+            mp3Stream = assetMan.openFd(mp3File).createInputStream();
+            media.setDataSource(mp3Stream.getFD());//error after first try
+            media.prepare();
+        } catch (IOException e1) {
+            e1.printStackTrace();
         }
-        return false;
+    }
+
+    private void initializeUsableColors(int theme) {
+        if (theme == 0) {
+            addHotColors();
+            addCoolColors();
+        } else if (theme == 1) {
+            addGrayscaleColors();
+        } else if (theme == 2) {
+            addHotColors();
+        } else if (theme == 3) {
+            addCoolColors();
+        }
+    }
+
+    private void addHotColors() {
+        colors.add(ContextCompat.getColor(this, R.color.red));
+        colors.add(ContextCompat.getColor(this, R.color.red_orange));
+        colors.add(ContextCompat.getColor(this, R.color.orange));
+        colors.add(ContextCompat.getColor(this, R.color.yellow));
+    }
+
+    private void addCoolColors() {
+        colors.add(ContextCompat.getColor(this, R.color.green));
+        colors.add(ContextCompat.getColor(this, R.color.turquoise));
+        colors.add(ContextCompat.getColor(this, R.color.blue));
+        colors.add(ContextCompat.getColor(this, R.color.violet_blue));
+        colors.add(ContextCompat.getColor(this, R.color.violet));
+        colors.add(ContextCompat.getColor(this, R.color.indigo));
+    }
+
+    private void addGrayscaleColors() {
+        colors.add(ContextCompat.getColor(this, R.color.white));
+        colors.add(ContextCompat.getColor(this, R.color.gray_cloud));
+        colors.add(ContextCompat.getColor(this, R.color.gray));
+        colors.add(ContextCompat.getColor(this, R.color.gray_dolphin));
+        colors.add(ContextCompat.getColor(this, R.color.black_cat));
+    }
+
+    private void loadSettings() {
+        // create enum settings since there are so few
+        SharedPreferences prefs = this.getSharedPreferences("myPrefsKey", Context.MODE_PRIVATE);
+        prevScore = prefs.getInt("key", 0);
+        currentSettings = prefs.getString("settings", "011");
     }
 }
 

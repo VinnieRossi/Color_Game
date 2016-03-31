@@ -4,6 +4,7 @@ import android.graphics.Bitmap;
 import android.graphics.Rect;
 import android.graphics.drawable.BitmapDrawable;
 import android.support.v4.content.ContextCompat;
+import android.util.Log;
 
 import java.util.List;
 
@@ -59,6 +60,25 @@ public class GameLogic {
     }
 
     public void removeCircle(int x, int y, Rect toRemove) {
-        gameState.getRectangleList().remove(getContainingRectIndex(toRemove)); // index out of bounds
+        gameState.getRectangleList().remove(getContainingRectIndex(toRemove));
+    }
+
+    public int determinePointValueOfCircle(int x, int y) {
+        return getRadius(getContainingRect(x, y)) - 25;
+    }
+
+    public int determineDifficulty(int score) {
+        if (score > 25000) {
+            return 6;
+        } else if (score > 10000) {
+            return 5;
+        } else if (score > 2500) {
+            return 4;
+        } else if (score > 1000) {
+            return 3;
+        } else if (score > 500) {
+            return 2;
+        }
+        return 1;
     }
 }

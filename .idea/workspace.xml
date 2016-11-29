@@ -41,12 +41,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45d8084b-9694-4fb2-80f8-13f5c073c34e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Game$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Game$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Game$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Game$1.class" />
+      <change type="DELETED" beforePath="C:\projects\Color_Game\app\build\intermediates\assets\debug\raw\popping.mp3" afterPath="" />
+      <change type="DELETED" beforePath="C:\projects\Color_Game\app\src\main\assets\raw\popping.mp3" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Game.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Game.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/GameGraphics.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/GameGraphics.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/GameLogic.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/GameLogic.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/GameState.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/GameState.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/MainActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/R$color.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/R.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/R.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Settings$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Settings$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Settings$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Settings$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Settings$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Settings$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Settings$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Settings$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Settings.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Settings.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" />
@@ -54,12 +63,16 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/debug_07fdd3a8c4b0d6305ebef5b44810e72eda3591e3.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/debug_07fdd3a8c4b0d6305ebef5b44810e72eda3591e3.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/Game.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/Game.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/GameGraphics.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/GameGraphics.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/GameLogic.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/GameLogic.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/GameState.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/GameState.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/vinal/color_game/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/vinal/color_game/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Color_Game.iws" />
@@ -89,25 +102,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="184" column="0" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.45675266">
+              <caret line="112" column="41" selection-start-line="112" selection-start-column="41" selection-end-line="112" selection-end-column="41" />
               <folding>
-                <element signature="method#onCreate#0;class#Game#0" expanded="false" />
-                <element signature="method#startGame#0;class#Game#0" expanded="false" />
-                <element signature="e#1769#3665#0" expanded="true" />
-                <element signature="e#3664#3665#0" expanded="true" />
-                <element signature="method#onTouch#0;class#Game#0" expanded="false" />
-                <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
                 <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-                <element signature="method#playPoppingSound#0;class#Game#0" expanded="false" />
-                <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
+                <element signature="method#playSound#0;class#Game#0" expanded="false" />
                 <element signature="method#removeLife#0;class#Game#0" expanded="false" />
                 <element signature="method#onPause#0;class#Game#0" expanded="false" />
                 <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
-                <element signature="method#setupAudio#0;class#Game#0" expanded="false" />
                 <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
               </folding>
             </state>
@@ -118,10 +123,11 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/GameState.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#GameState#0;class#GameState#0" expanded="false" />
+                <element signature="method#addPoints#0;class#GameState#0" expanded="false" />
                 <element signature="method#shouldAddLife#0;class#GameState#0" expanded="false" />
               </folding>
             </state>
@@ -132,9 +138,8 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/GameLogic.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="method#getContainingRect#0;class#GameLogic#0" expanded="false" />
                 <element signature="method#getContainingRectIndex#0;class#GameLogic#0" expanded="false" />
                 <element signature="method#haveOverlappingCircle#0;class#GameLogic#0" expanded="false" />
@@ -146,11 +151,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameGraphics.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GameGraphics.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/GameGraphics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.69473684">
-              <caret line="59" column="68" selection-start-line="59" selection-start-column="68" selection-end-line="59" selection-end-column="68" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#drawCircle#0;class#GameGraphics#0" expanded="false" />
@@ -1773,9 +1778,9 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_settings_layout.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_game_layout.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/GameState.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/GameLogic.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/GameGraphics.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/GameLogic.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/GameState.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/Game.java" />
       </list>
     </option>
@@ -1847,8 +1852,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1929,92 +1932,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Color_Game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Color_Game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Color_Game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Color_Game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Color_Game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Color_Game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="color_game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="AndroidView">
@@ -2056,12 +1973,14 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="FullScreen" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="a327cdca" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="bc368cee" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_23_x86" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
@@ -2268,7 +2187,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44048944" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23581758" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2305,7 +2224,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2315,42 +2234,34 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="396" column="53" selection-start-line="396" selection-start-column="53" selection-end-line="396" selection-end-column="53" />
           <folding>
-            <element signature="method#onCreate#0;class#Game#0" expanded="false" />
-            <element signature="method#startGame#0;class#Game#0" expanded="false" />
-            <element signature="e#1769#3665#0" expanded="true" />
-            <element signature="e#3664#3665#0" expanded="true" />
-            <element signature="method#onTouch#0;class#Game#0" expanded="false" />
-            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playPoppingSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
+            <element signature="method#playSound#0;class#Game#0" expanded="false" />
             <element signature="method#removeLife#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
-            <element signature="method#setupAudio#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main_layout.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="91" column="8" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="30" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_settings_layout.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_settings_layout.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
@@ -2365,19 +2276,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#onCreate#0;class#Game#0" expanded="false" />
-            <element signature="method#startGame#0;class#Game#0" expanded="false" />
-            <element signature="e#1769#3665#0" expanded="true" />
-            <element signature="e#3664#3665#0" expanded="true" />
-            <element signature="method#onTouch#0;class#Game#0" expanded="false" />
-            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playPoppingSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
+            <element signature="method#playSound#0;class#Game#0" expanded="false" />
             <element signature="method#removeLife#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
-            <element signature="method#setupAudio#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
           </folding>
         </state>
@@ -2395,19 +2298,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="92" column="13" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
           <folding>
-            <element signature="method#onCreate#0;class#Game#0" expanded="false" />
-            <element signature="method#startGame#0;class#Game#0" expanded="false" />
-            <element signature="e#1769#3665#0" expanded="true" />
-            <element signature="e#3664#3665#0" expanded="true" />
-            <element signature="method#onTouch#0;class#Game#0" expanded="false" />
-            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playPoppingSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
+            <element signature="method#playSound#0;class#Game#0" expanded="false" />
             <element signature="method#removeLife#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
-            <element signature="method#setupAudio#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
           </folding>
         </state>
@@ -2425,32 +2320,24 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
           <folding>
-            <element signature="method#onCreate#0;class#Game#0" expanded="false" />
-            <element signature="method#startGame#0;class#Game#0" expanded="false" />
-            <element signature="e#1769#3665#0" expanded="true" />
-            <element signature="e#3664#3665#0" expanded="true" />
-            <element signature="method#onTouch#0;class#Game#0" expanded="false" />
-            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playPoppingSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
+            <element signature="method#playSound#0;class#Game#0" expanded="false" />
             <element signature="method#removeLife#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
-            <element signature="method#setupAudio#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_game_layout.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
@@ -2465,32 +2352,24 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#onCreate#0;class#Game#0" expanded="false" />
-            <element signature="method#startGame#0;class#Game#0" expanded="false" />
-            <element signature="e#1769#3665#0" expanded="true" />
-            <element signature="e#3664#3665#0" expanded="true" />
-            <element signature="method#onTouch#0;class#Game#0" expanded="false" />
-            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playPoppingSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
+            <element signature="method#playSound#0;class#Game#0" expanded="false" />
             <element signature="method#removeLife#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
-            <element signature="method#setupAudio#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_game_layout.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
@@ -2505,32 +2384,24 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#onCreate#0;class#Game#0" expanded="false" />
-            <element signature="method#startGame#0;class#Game#0" expanded="false" />
-            <element signature="e#1769#3665#0" expanded="true" />
-            <element signature="e#3664#3665#0" expanded="true" />
-            <element signature="method#onTouch#0;class#Game#0" expanded="false" />
-            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playPoppingSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
+            <element signature="method#playSound#0;class#Game#0" expanded="false" />
             <element signature="method#removeLife#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
-            <element signature="method#setupAudio#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_game_layout.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
@@ -2545,32 +2416,24 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#onCreate#0;class#Game#0" expanded="false" />
-            <element signature="method#startGame#0;class#Game#0" expanded="false" />
-            <element signature="e#1769#3665#0" expanded="true" />
-            <element signature="e#3664#3665#0" expanded="true" />
-            <element signature="method#onTouch#0;class#Game#0" expanded="false" />
-            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playPoppingSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
+            <element signature="method#playSound#0;class#Game#0" expanded="false" />
             <element signature="method#removeLife#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
-            <element signature="method#setupAudio#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_game_layout.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
@@ -2586,32 +2449,24 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="94" column="18" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="18" />
           <folding>
-            <element signature="method#onCreate#0;class#Game#0" expanded="false" />
-            <element signature="method#startGame#0;class#Game#0" expanded="false" />
-            <element signature="e#1769#3665#0" expanded="true" />
-            <element signature="e#3664#3665#0" expanded="true" />
-            <element signature="method#onTouch#0;class#Game#0" expanded="false" />
-            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playPoppingSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
+            <element signature="method#playSound#0;class#Game#0" expanded="false" />
             <element signature="method#removeLife#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
-            <element signature="method#setupAudio#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_game_layout.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
@@ -2627,19 +2482,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#onCreate#0;class#Game#0" expanded="false" />
-            <element signature="method#startGame#0;class#Game#0" expanded="false" />
-            <element signature="e#1769#3665#0" expanded="true" />
-            <element signature="e#3664#3665#0" expanded="true" />
-            <element signature="method#onTouch#0;class#Game#0" expanded="false" />
-            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playPoppingSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
+            <element signature="method#playSound#0;class#Game#0" expanded="false" />
             <element signature="method#removeLife#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
-            <element signature="method#setupAudio#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
           </folding>
         </state>
@@ -2658,19 +2505,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#onCreate#0;class#Game#0" expanded="false" />
-            <element signature="method#startGame#0;class#Game#0" expanded="false" />
-            <element signature="e#1769#3665#0" expanded="true" />
-            <element signature="e#3664#3665#0" expanded="true" />
-            <element signature="method#onTouch#0;class#Game#0" expanded="false" />
-            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playPoppingSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
+            <element signature="method#playSound#0;class#Game#0" expanded="false" />
             <element signature="method#removeLife#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
-            <element signature="method#setupAudio#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
           </folding>
         </state>
@@ -2681,19 +2520,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#onCreate#0;class#Game#0" expanded="false" />
-            <element signature="method#startGame#0;class#Game#0" expanded="false" />
-            <element signature="e#1769#3665#0" expanded="true" />
-            <element signature="e#3664#3665#0" expanded="true" />
-            <element signature="method#onTouch#0;class#Game#0" expanded="false" />
-            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playPoppingSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
+            <element signature="method#playSound#0;class#Game#0" expanded="false" />
             <element signature="method#removeLife#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
-            <element signature="method#setupAudio#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
           </folding>
         </state>
@@ -2704,19 +2535,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#onCreate#0;class#Game#0" expanded="false" />
-            <element signature="method#startGame#0;class#Game#0" expanded="false" />
-            <element signature="e#1769#3665#0" expanded="true" />
-            <element signature="e#3664#3665#0" expanded="true" />
-            <element signature="method#onTouch#0;class#Game#0" expanded="false" />
-            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playPoppingSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
+            <element signature="method#playSound#0;class#Game#0" expanded="false" />
             <element signature="method#removeLife#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
-            <element signature="method#setupAudio#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
           </folding>
         </state>
@@ -2727,19 +2550,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#onCreate#0;class#Game#0" expanded="false" />
-            <element signature="method#startGame#0;class#Game#0" expanded="false" />
-            <element signature="e#1769#3665#0" expanded="true" />
-            <element signature="e#3664#3665#0" expanded="true" />
-            <element signature="method#onTouch#0;class#Game#0" expanded="false" />
-            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playPoppingSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
+            <element signature="method#playSound#0;class#Game#0" expanded="false" />
             <element signature="method#removeLife#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
-            <element signature="method#setupAudio#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
           </folding>
         </state>
@@ -2750,19 +2565,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#onCreate#0;class#Game#0" expanded="false" />
-            <element signature="method#startGame#0;class#Game#0" expanded="false" />
-            <element signature="e#1769#3665#0" expanded="true" />
-            <element signature="e#3664#3665#0" expanded="true" />
-            <element signature="method#onTouch#0;class#Game#0" expanded="false" />
-            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playPoppingSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
+            <element signature="method#playSound#0;class#Game#0" expanded="false" />
             <element signature="method#removeLife#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
-            <element signature="method#setupAudio#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
           </folding>
         </state>
@@ -2773,19 +2580,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#onCreate#0;class#Game#0" expanded="false" />
-            <element signature="method#startGame#0;class#Game#0" expanded="false" />
-            <element signature="e#1769#3665#0" expanded="true" />
-            <element signature="e#3664#3665#0" expanded="true" />
-            <element signature="method#onTouch#0;class#Game#0" expanded="false" />
-            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playPoppingSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
+            <element signature="method#playSound#0;class#Game#0" expanded="false" />
             <element signature="method#removeLife#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
-            <element signature="method#setupAudio#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
           </folding>
         </state>
@@ -2796,19 +2595,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#onCreate#0;class#Game#0" expanded="false" />
-            <element signature="method#startGame#0;class#Game#0" expanded="false" />
-            <element signature="e#1769#3665#0" expanded="true" />
-            <element signature="e#3664#3665#0" expanded="true" />
-            <element signature="method#onTouch#0;class#Game#0" expanded="false" />
-            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playPoppingSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
+            <element signature="method#playSound#0;class#Game#0" expanded="false" />
             <element signature="method#removeLife#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
-            <element signature="method#setupAudio#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
           </folding>
         </state>
@@ -2819,19 +2610,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#onCreate#0;class#Game#0" expanded="false" />
-            <element signature="method#startGame#0;class#Game#0" expanded="false" />
-            <element signature="e#1769#3665#0" expanded="true" />
-            <element signature="e#3664#3665#0" expanded="true" />
-            <element signature="method#onTouch#0;class#Game#0" expanded="false" />
-            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playPoppingSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
+            <element signature="method#playSound#0;class#Game#0" expanded="false" />
             <element signature="method#removeLife#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
-            <element signature="method#setupAudio#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
           </folding>
         </state>
@@ -2842,19 +2625,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#onCreate#0;class#Game#0" expanded="false" />
-            <element signature="method#startGame#0;class#Game#0" expanded="false" />
-            <element signature="e#1769#3665#0" expanded="true" />
-            <element signature="e#3664#3665#0" expanded="true" />
-            <element signature="method#onTouch#0;class#Game#0" expanded="false" />
-            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playPoppingSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
+            <element signature="method#playSound#0;class#Game#0" expanded="false" />
             <element signature="method#removeLife#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
-            <element signature="method#setupAudio#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
           </folding>
         </state>
@@ -2915,33 +2690,33 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_settings_layout.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main_layout.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main_layout.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_game_layout.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_game_layout.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.054945">
           <caret line="66" column="42" selection-start-line="66" selection-start-column="42" selection-end-line="66" selection-end-column="42" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
@@ -2960,37 +2735,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/Game.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/GameGraphics.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="184" column="0" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
-          <folding>
-            <element signature="method#onCreate#0;class#Game#0" expanded="false" />
-            <element signature="method#startGame#0;class#Game#0" expanded="false" />
-            <element signature="e#1769#3665#0" expanded="true" />
-            <element signature="e#3664#3665#0" expanded="true" />
-            <element signature="method#onTouch#0;class#Game#0" expanded="false" />
-            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playPoppingSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#removeLife#0;class#Game#0" expanded="false" />
-            <element signature="method#onPause#0;class#Game#0" expanded="false" />
-            <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
-            <element signature="method#setupAudio#0;class#Game#0" expanded="false" />
-            <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/GameState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#GameState#0;class#GameState#0" expanded="false" />
-            <element signature="method#shouldAddLife#0;class#GameState#0" expanded="false" />
+            <element signature="method#drawCircle#0;class#GameGraphics#0" expanded="false" />
+            <element signature="method#setLifeStatusImages#0;class#GameGraphics#0" expanded="false" />
+            <element signature="method#initializeUsableColors#0;class#GameGraphics#0" expanded="false" />
+            <element signature="method#addHotColors#0;class#GameGraphics#0" expanded="false" />
+            <element signature="method#addCoolColors#0;class#GameGraphics#0" expanded="false" />
+            <element signature="method#addGrayscaleColors#0;class#GameGraphics#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2998,9 +2754,8 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/GameLogic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#getContainingRect#0;class#GameLogic#0" expanded="false" />
             <element signature="method#getContainingRectIndex#0;class#GameLogic#0" expanded="false" />
             <element signature="method#haveOverlappingCircle#0;class#GameLogic#0" expanded="false" />
@@ -3011,18 +2766,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/GameGraphics.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/GameState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.69473684">
-          <caret line="59" column="68" selection-start-line="59" selection-start-column="68" selection-end-line="59" selection-end-column="68" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#drawCircle#0;class#GameGraphics#0" expanded="false" />
-            <element signature="method#setLifeStatusImages#0;class#GameGraphics#0" expanded="false" />
-            <element signature="method#initializeUsableColors#0;class#GameGraphics#0" expanded="false" />
-            <element signature="method#addHotColors#0;class#GameGraphics#0" expanded="false" />
-            <element signature="method#addCoolColors#0;class#GameGraphics#0" expanded="false" />
-            <element signature="method#addGrayscaleColors#0;class#GameGraphics#0" expanded="false" />
+            <element signature="method#GameState#0;class#GameState#0" expanded="false" />
+            <element signature="method#addPoints#0;class#GameState#0" expanded="false" />
+            <element signature="method#shouldAddLife#0;class#GameState#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45675266">
+          <caret line="112" column="41" selection-start-line="112" selection-start-column="41" selection-end-line="112" selection-end-column="41" />
+          <folding>
+            <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
+            <element signature="method#playSound#0;class#Game#0" expanded="false" />
+            <element signature="method#removeLife#0;class#Game#0" expanded="false" />
+            <element signature="method#onPause#0;class#Game#0" expanded="false" />
+            <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
+            <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
           </folding>
         </state>
       </provider>

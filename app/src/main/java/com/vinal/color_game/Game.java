@@ -13,9 +13,7 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
-
 import java.io.FileInputStream;
-import java.io.IOException;
 import java.util.Random;
 
 public class Game extends Activity implements View.OnTouchListener{
@@ -28,8 +26,6 @@ public class Game extends Activity implements View.OnTouchListener{
     private GameLogic gameLogic;
     private GameGraphics gameGraphics;
 
-    private AssetManager assetMan;
-    private FileInputStream mp3Stream;
     private MediaPlayer media = new MediaPlayer();
 
     private int prevScore;
@@ -43,12 +39,12 @@ public class Game extends Activity implements View.OnTouchListener{
 
         playScreen = (ImageView) findViewById(R.id.playScreen);
         activity = this;
+
         gameState = new GameState();
         gameLogic = new GameLogic(gameState);
         gameGraphics = new GameGraphics(activity);
 
         loadSettings();
-        setupAudio();
         gameGraphics.setupGraphics();
         gameGraphics.initializeUsableColors(getCurrentTheme());
         playScreen.setOnTouchListener(this);
@@ -71,7 +67,7 @@ public class Game extends Activity implements View.OnTouchListener{
                         while (gameLogic.xNotWithinBounds(x) || gameLogic.yNotWithinBounds(y) || gameLogic.haveOverlappingCircle(x, y, radius)) {
                             x = rn.nextInt(playScreen.getWidth());
                             y = rn.nextInt(playScreen.getHeight());
-
+                            //Rewrite this entire section to determine game end
                             if (numTries > 35) {
                                 if (radius > 20) {
                                     radius--;
@@ -111,12 +107,14 @@ public class Game extends Activity implements View.OnTouchListener{
             int y = (int) event.getY();
 
             if (isInCircle(x, y, gameGraphics.getPlayscreenBitmap())) {
-                if (getSoundOn()) {
-                    playPoppingSound();
-                }
                 gameState.addPoints(gameLogic.determinePointValueOfCircle(x, y));
                 removeCircle(x, y);
+                if (isSoundOn()) {
+                    playSound("popping");
+                }
                 gameGraphics.updateVisibleScore(gameState.getScore());
+                //I can move this out for sure, as well as set a method that does the logic on what needs to be updated
+                //This is doing way too many calls currently
                 gameGraphics.setLifeStatusImages(gameState.getLife());
                 gameState.setDifficulty(gameLogic.determineDifficulty(gameState.getScore()));
             } else {
@@ -137,20 +135,17 @@ public class Game extends Activity implements View.OnTouchListener{
         return bitmap.getPixel(x, y) != 0 && bitmap.getPixel(x, y) != ContextCompat.getColor(this, R.color.black);
     }
 
-    private void playPoppingSound() {
-        if (media.isPlaying()) {
-            media.stop();
-            media.reset();
-            String mp3File = "raw/popping.mp3";
-            assetMan = getAssets();
-            try {
-                mp3Stream = assetMan.openFd(mp3File).createInputStream();
-                media.setDataSource(mp3Stream.getFD());
-                media.prepare();
-            } catch (IOException e1) {
-                e1.printStackTrace();
-            }
-            media.start();
+    private void playSound(String sound) {
+        // It's a bit hacky, but hey it works!
+        switch(sound) {
+            case "popping":
+                media = MediaPlayer.create(this, R.raw.popping);
+                break;
+            case "loss":
+                media = MediaPlayer.create(this, R.raw.loss);
+                break;
+            default:
+                Log.e("EXCEPTION", "Could not find audio case of word: " + sound);
         }
         media.start();
     }
@@ -163,6 +158,9 @@ public class Game extends Activity implements View.OnTouchListener{
 
     private void removeLife() {
         gameState.removeLife(1);
+        if(isSoundOn()) {
+            playSound("loss");
+        }
         gameGraphics.setLifeStatusImages(gameState.getLife());
         if (gameState.getLife() < 0) {
             onPause();
@@ -188,29 +186,16 @@ public class Game extends Activity implements View.OnTouchListener{
         playScreen.setBackgroundColor(ContextCompat.getColor(this, R.color.black));
     }
 
-    private boolean getSoundOn() {
+    private boolean isSoundOn() {
         return currentSettings.substring(1, 2).equals("1");
     }
 
-    private boolean getPowerUpOn() {
+    private boolean isPowerUpOn() {
         return currentSettings.substring(2).equals("1");
     }
 
     private int getCurrentTheme() {
         return Integer.parseInt(currentSettings.substring(0, 1));
-    }
-
-    private void setupAudio() {
-        String mp3File = "raw/popping.mp3";
-
-        assetMan = getAssets();
-        try {
-            mp3Stream = assetMan.openFd(mp3File).createInputStream();
-            media.setDataSource(mp3Stream.getFD());//error after first try
-            media.prepare();
-        } catch (IOException e1) {
-            e1.printStackTrace();
-        }
     }
 
     private void loadSettings() {

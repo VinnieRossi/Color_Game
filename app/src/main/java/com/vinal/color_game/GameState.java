@@ -1,7 +1,6 @@
 package com.vinal.color_game;
 
 import android.graphics.Rect;
-import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,7 +44,7 @@ public class GameState {
 
     public void addPoints(int amount) {
         int finalAmount = getDifficulty()*(120-amount);
-        finalAmount *= 20; //debug
+        //finalAmount *= 20; // For debugging purposes
         score += finalAmount;
         if (shouldAddLife(score, finalAmount)) {
             addLife(1);

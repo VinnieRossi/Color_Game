@@ -1,12 +1,6 @@
 package com.vinal.color_game;
 
-import android.graphics.Bitmap;
 import android.graphics.Rect;
-import android.graphics.drawable.BitmapDrawable;
-import android.support.v4.content.ContextCompat;
-import android.util.Log;
-
-import java.util.List;
 
 /**
  * Created by Vinnie on 3/30/2016.

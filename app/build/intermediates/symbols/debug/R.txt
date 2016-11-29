@@ -974,8 +974,9 @@ int id themeValue 0x7f080013
 int layout activity_game_layout 0x7f030000
 int layout activity_main_layout 0x7f030001
 int layout activity_settings_layout 0x7f030002
-int raw loss 0x7f040000
-int raw popping 0x7f040001
+int raw life 0x7f040000
+int raw lifeloss 0x7f040001
+int raw popping 0x7f040002
 int string app_name 0x7f070000
 int string back 0x7f070001
 int string challenges 0x7f070002

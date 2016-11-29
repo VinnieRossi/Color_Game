@@ -41,21 +41,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45d8084b-9694-4fb2-80f8-13f5c073c34e" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\projects\Color_Game\app\build\intermediates\assets\debug\raw\popping.mp3" afterPath="" />
-      <change type="DELETED" beforePath="C:\projects\Color_Game\app\src\main\assets\raw\popping.mp3" afterPath="" />
+      <change type="DELETED" beforePath="C:\projects\Color_Game\app\build\intermediates\res\merged\debug\raw\loss.mp3" afterPath="" />
+      <change type="DELETED" beforePath="C:\projects\Color_Game\app\src\main\res\raw\loss.mp3" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Game$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Game$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Game$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Game$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Game.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Game.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/GameGraphics.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/GameGraphics.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/R$color.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/GameLogic.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/GameLogic.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/GameState.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/GameState.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/R$raw.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/R$raw.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/R$string.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/R.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Settings$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Settings$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Settings$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Settings$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Settings$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Settings$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Settings$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Settings$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Settings.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/vinal/color_game/Settings.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" />
@@ -66,13 +61,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/Game.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/Game.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/GameLogic.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/GameLogic.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/GameState.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/GameState.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/vinal/color_game/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/vinal/color_game/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/raw.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/raw.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Color_Game.iws" />
@@ -105,12 +98,12 @@
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45675266">
-              <caret line="112" column="41" selection-start-line="112" selection-start-column="41" selection-end-line="112" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.43122676">
+              <caret line="170" column="34" selection-start-line="170" selection-start-column="34" selection-end-line="170" selection-end-column="34" />
               <folding>
+                <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
                 <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-                <element signature="method#playSound#0;class#Game#0" expanded="false" />
-                <element signature="method#removeLife#0;class#Game#0" expanded="false" />
+                <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
                 <element signature="method#onPause#0;class#Game#0" expanded="false" />
                 <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
                 <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
@@ -123,12 +116,10 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/GameState.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#GameState#0;class#GameState#0" expanded="false" />
-                <element signature="method#addPoints#0;class#GameState#0" expanded="false" />
-                <element signature="method#shouldAddLife#0;class#GameState#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -138,7 +129,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/GameLogic.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding>
                 <element signature="method#getContainingRect#0;class#GameLogic#0" expanded="false" />
                 <element signature="method#getContainingRectIndex#0;class#GameLogic#0" expanded="false" />
@@ -155,9 +146,14 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/GameGraphics.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+              <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#GameGraphics#0;class#GameGraphics#0" expanded="false" />
+                <element signature="method#setupGraphics#0;class#GameGraphics#0" expanded="false" />
+                <element signature="method#eraseCircle#0;class#GameGraphics#0" expanded="false" />
+                <element signature="method#getPlayscreenBitmap#0;class#GameGraphics#0" expanded="false" />
+                <element signature="method#drawOutlineRectangle#0;class#GameGraphics#0" expanded="false" />
                 <element signature="method#drawCircle#0;class#GameGraphics#0" expanded="false" />
                 <element signature="method#setLifeStatusImages#0;class#GameGraphics#0" expanded="false" />
                 <element signature="method#initializeUsableColors#0;class#GameGraphics#0" expanded="false" />
@@ -2187,7 +2183,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23581758" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37041157" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2234,9 +2230,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="396" column="53" selection-start-line="396" selection-start-column="53" selection-end-line="396" selection-end-column="53" />
           <folding>
+            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeLife#0;class#Game#0" expanded="false" />
+            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
@@ -2276,9 +2272,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeLife#0;class#Game#0" expanded="false" />
+            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
@@ -2298,9 +2294,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="92" column="13" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
           <folding>
+            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeLife#0;class#Game#0" expanded="false" />
+            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
@@ -2320,9 +2316,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
           <folding>
+            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeLife#0;class#Game#0" expanded="false" />
+            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
@@ -2352,9 +2348,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeLife#0;class#Game#0" expanded="false" />
+            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
@@ -2384,9 +2380,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeLife#0;class#Game#0" expanded="false" />
+            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
@@ -2416,9 +2412,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeLife#0;class#Game#0" expanded="false" />
+            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
@@ -2449,9 +2445,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="94" column="18" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="18" />
           <folding>
+            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeLife#0;class#Game#0" expanded="false" />
+            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
@@ -2482,9 +2478,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeLife#0;class#Game#0" expanded="false" />
+            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
@@ -2505,9 +2501,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeLife#0;class#Game#0" expanded="false" />
+            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
@@ -2520,9 +2516,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeLife#0;class#Game#0" expanded="false" />
+            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
@@ -2535,9 +2531,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeLife#0;class#Game#0" expanded="false" />
+            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
@@ -2550,9 +2546,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeLife#0;class#Game#0" expanded="false" />
+            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
@@ -2565,9 +2561,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeLife#0;class#Game#0" expanded="false" />
+            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
@@ -2580,9 +2576,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeLife#0;class#Game#0" expanded="false" />
+            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
@@ -2595,9 +2591,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeLife#0;class#Game#0" expanded="false" />
+            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
@@ -2610,9 +2606,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeLife#0;class#Game#0" expanded="false" />
+            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
@@ -2625,9 +2621,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeLife#0;class#Game#0" expanded="false" />
+            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />
@@ -2738,9 +2734,14 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/GameGraphics.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#GameGraphics#0;class#GameGraphics#0" expanded="false" />
+            <element signature="method#setupGraphics#0;class#GameGraphics#0" expanded="false" />
+            <element signature="method#eraseCircle#0;class#GameGraphics#0" expanded="false" />
+            <element signature="method#getPlayscreenBitmap#0;class#GameGraphics#0" expanded="false" />
+            <element signature="method#drawOutlineRectangle#0;class#GameGraphics#0" expanded="false" />
             <element signature="method#drawCircle#0;class#GameGraphics#0" expanded="false" />
             <element signature="method#setLifeStatusImages#0;class#GameGraphics#0" expanded="false" />
             <element signature="method#initializeUsableColors#0;class#GameGraphics#0" expanded="false" />
@@ -2754,7 +2755,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/GameLogic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="method#getContainingRect#0;class#GameLogic#0" expanded="false" />
             <element signature="method#getContainingRectIndex#0;class#GameLogic#0" expanded="false" />
@@ -2769,24 +2770,22 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/GameState.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#GameState#0;class#GameState#0" expanded="false" />
-            <element signature="method#addPoints#0;class#GameState#0" expanded="false" />
-            <element signature="method#shouldAddLife#0;class#GameState#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vinal/color_game/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45675266">
-          <caret line="112" column="41" selection-start-line="112" selection-start-column="41" selection-end-line="112" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.43122676">
+          <caret line="170" column="34" selection-start-line="170" selection-start-column="34" selection-end-line="170" selection-end-column="34" />
           <folding>
+            <element signature="method#createNewCircle#0;class#Game#0" expanded="false" />
             <element signature="method#isInCircle#0;class#Game#0" expanded="false" />
-            <element signature="method#playSound#0;class#Game#0" expanded="false" />
-            <element signature="method#removeLife#0;class#Game#0" expanded="false" />
+            <element signature="method#removeCircle#0;class#Game#0" expanded="false" />
             <element signature="method#onPause#0;class#Game#0" expanded="false" />
             <element signature="method#lostSequence#0;class#Game#0" expanded="false" />
             <element signature="method#loadSettings#0;class#Game#0" expanded="false" />

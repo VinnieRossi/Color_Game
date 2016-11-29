@@ -5,12 +5,15 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
+import android.graphics.Canvas;
 import android.graphics.Rect;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.MotionEvent;
+import android.view.Surface;
+import android.view.SurfaceHolder;
 import android.view.View;
 import android.widget.ImageView;
 import java.io.FileInputStream;
@@ -107,15 +110,18 @@ public class Game extends Activity implements View.OnTouchListener{
             int y = (int) event.getY();
 
             if (isInCircle(x, y, gameGraphics.getPlayscreenBitmap())) {
-                gameState.addPoints(gameLogic.determinePointValueOfCircle(x, y));
-                removeCircle(x, y);
                 if (isSoundOn()) {
                     playSound("popping");
                 }
+                gameState.addPoints(gameLogic.determinePointValueOfCircle(x, y));
+                removeCircle(x, y);
                 gameGraphics.updateVisibleScore(gameState.getScore());
-                //I can move this out for sure, as well as set a method that does the logic on what needs to be updated
-                //This is doing way too many calls currently
-                gameGraphics.setLifeStatusImages(gameState.getLife());
+
+                if(gameState.shouldAddLife()) {
+                    gameState.addLife(1);
+                    playSound("life");
+                    gameGraphics.setLifeStatusImages(gameState.getLife());
+                }
                 gameState.setDifficulty(gameLogic.determineDifficulty(gameState.getScore()));
             } else {
                 removeLife();
@@ -137,12 +143,16 @@ public class Game extends Activity implements View.OnTouchListener{
 
     private void playSound(String sound) {
         // It's a bit hacky, but hey it works!
+        media.release();
         switch(sound) {
             case "popping":
                 media = MediaPlayer.create(this, R.raw.popping);
                 break;
-            case "loss":
-                media = MediaPlayer.create(this, R.raw.loss);
+            case "life" :
+                media = MediaPlayer.create(this, R.raw.life);
+                break;
+            case "lifeloss":
+                media = MediaPlayer.create(this, R.raw.lifeloss);
                 break;
             default:
                 Log.e("EXCEPTION", "Could not find audio case of word: " + sound);
@@ -157,10 +167,10 @@ public class Game extends Activity implements View.OnTouchListener{
     }
 
     private void removeLife() {
-        gameState.removeLife(1);
         if(isSoundOn()) {
-            playSound("loss");
+            playSound("lifeloss");
         }
+        gameState.removeLife(1);
         gameGraphics.setLifeStatusImages(gameState.getLife());
         if (gameState.getLife() < 0) {
             onPause();

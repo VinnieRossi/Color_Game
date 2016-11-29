@@ -12,6 +12,7 @@ public class GameState {
 
     private int difficulty;
     private int life;
+    private int previousScore;
     private int score;
     private List<Rect> rectangles;
 
@@ -19,6 +20,7 @@ public class GameState {
         difficulty = 1;
         life = 3;
         score = 0;
+        previousScore = 0;
         rectangles = new ArrayList<>();
     }
 
@@ -45,14 +47,16 @@ public class GameState {
     public void addPoints(int amount) {
         int finalAmount = getDifficulty()*(120-amount);
         //finalAmount *= 20; // For debugging purposes
+        previousScore = score;
         score += finalAmount;
-        if (shouldAddLife(score, finalAmount)) {
-            addLife(1);
-        }
+        //if (shouldAddLife(score, finalAmount)) {
+        //    addLife(1);
+        //}
     }
 
-    private boolean shouldAddLife(int score, int finalAmount) {
+    public boolean shouldAddLife() {
         // If you just hit 10k or 25k points
-        return ((score > 10000 && score - finalAmount < 10000) || (score > 25000 && score - finalAmount < 25000));
+        return previousScore < 10000 && score >= 10000 || previousScore < 25000 && score >= 25000;
+        //return ((score > 10000 && score - finalAmount < 10000) || (score > 25000 && score - finalAmount < 25000));
     }
 }

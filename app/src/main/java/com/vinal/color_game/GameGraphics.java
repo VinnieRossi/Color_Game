@@ -70,10 +70,12 @@ public class GameGraphics {
         score.setText("" + currentScore);
     }
 
-    public void drawOutlineRectangle(Rect newRect) {
+    public void drawOutlineRectangle(Rect newRect, boolean debug) {
         paint.setStyle(Paint.Style.STROKE);
         paint.setColor(ContextCompat.getColor(activity, R.color.black));
-        //paint.setColor(ContextCompat.getColor(activity, R.color.white)); // debug
+        if(debug) {
+            paint.setColor(ContextCompat.getColor(activity, R.color.white)); // debug
+        }
         canvas.drawRect(newRect, paint);
     }
 

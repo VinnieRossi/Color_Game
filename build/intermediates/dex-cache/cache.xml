@@ -1,3 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        is-multidex="true"
+        jar="C:\projects\Color_Game\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0-alpha1\jars\libs\internal_impl-24.0.0-alpha1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="e57fba0a2d57d3501d8f4ff44c23092978804845">
+        <dex dex="C:\projects\Color_Game\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.0.0-alpha1_dee9835192c34701e212f551de1898f08a11472c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\Color_Game\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="141d6477fffedc80f50645b72167f673105dfd59">
+        <dex dex="C:\projects\Color_Game\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_b83fda6a8445b7f039076c41b6aa797c978f5808\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\Color_Game\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="4d4e2a127d486fe59a459d46d95c96ffa36fb473">
+        <dex dex="C:\projects\Color_Game\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_0b48cb3fb37be92dea7e7edb4e39ade6ceb56916\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vinnie\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.0.0-alpha1\support-annotations-24.0.0-alpha1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="b8062546971a3d196343232a19a3c0016272ba47">
+        <dex dex="C:\projects\Color_Game\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.0.0-alpha1_59b78a4c8fdd10ebb1a103add0dc50a1654b7ae3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\Color_Game\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0-alpha1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="9aaaea3a89040f8176f810c85e288fc74d5d1f12">
+        <dex dex="C:\projects\Color_Game\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.0.0-alpha1_b7c8e296361a5b17ef50a891ae0840dbb8ea3c79\classes.dex" />
+    </item>
+
+</items>

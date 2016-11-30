@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\projects\\Color_Game\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\green_check.png",
+        "source": "C:\\projects\\Color_Game\\app\\src\\main\\res\\drawable-hdpi\\green_check.png"
+    },
+    {
+        "merged": "C:\\projects\\Color_Game\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher.png",
+        "source": "C:\\projects\\Color_Game\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\projects\\Color_Game\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\red_x.png",
+        "source": "C:\\projects\\Color_Game\\app\\src\\main\\res\\drawable-hdpi\\red_x.png"
+    },
+    {
+        "merged": "C:\\projects\\Color_Game\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\color_wheel.png",
+        "source": "C:\\projects\\Color_Game\\app\\src\\main\\res\\drawable-hdpi\\color_wheel.png"
+    }
+]

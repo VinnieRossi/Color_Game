@@ -1,0 +1,7 @@
+#Wed Nov 30 07:58:22 EST 2016
+base.0=C\:\\projects\\Color_Game\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_0b48cb3fb37be92dea7e7edb4e39ade6ceb56916
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\projects\\Color_Game\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_b83fda6a8445b7f039076c41b6aa797c978f5808\\classes.dex
+base.1=C\:\\projects\\Color_Game\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_b83fda6a8445b7f039076c41b6aa797c978f5808
+file.0=C\:\\projects\\Color_Game\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_0b48cb3fb37be92dea7e7edb4e39ade6ceb56916\\classes.dex

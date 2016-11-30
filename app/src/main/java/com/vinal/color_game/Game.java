@@ -55,6 +55,21 @@ public class Game extends Activity implements View.OnTouchListener{
         startGame();
     }
 
+    // TODO:
+    // 1. Rewrite radius calculation
+    // 2. Rewrite game ending logic
+    // 3. Rewrite point from radius (currently 120 - radius - 25 multiplied by difficulty)
+    // 4. Move UI screen invalidate to graphics?
+    // 5. Add touch hitbox for circles (3x3?)
+    // 6. Refactor more code out of Game class (should probably just be thread loop and on touch
+    // 7. **Fix random bug where sometimes circle won't erase**
+    // 8. Fix audio interruption - maybe never interrupt new life or loss of life, but popping has lowest priority?
+    // 9. Add in bonus multiplier for <5 circles
+    // 10. Add in bonus for how many in a row (X.Y, where x is 1 + (how many in a row/20) y is ((how many in a row/2) % 20 )
+    // 11. Add in toggle for hitbox?
+    // 12. Add in hard mode? it includes toggle?
+    // 13. Is there a small graphical glitch? debug mode shows some circles outside the box
+
     private void startGame() {
         thread = new Thread() {
             public void run() {
@@ -64,13 +79,21 @@ public class Game extends Activity implements View.OnTouchListener{
                         Thread.sleep(1500 / gameState.getDifficulty());
                         x = rn.nextInt(playScreen.getWidth());
                         y = rn.nextInt(playScreen.getHeight());
-                        radius = rn.nextInt(100) + (45 - (5 * gameState.getDifficulty()));//100, 25, 3
+                        // Rewrite radius logic
+                        radius = rn.nextInt(100) + (45 - (5 * gameState.getDifficulty()));
                         numTries = 0;
 
                         while (gameLogic.xNotWithinBounds(x) || gameLogic.yNotWithinBounds(y) || gameLogic.haveOverlappingCircle(x, y, radius)) {
                             x = rn.nextInt(playScreen.getWidth());
                             y = rn.nextInt(playScreen.getHeight());
-                            //Rewrite this entire section to determine game end
+                            //Rewrite this entire section to determine game end (use difficulty as well?)
+
+                            // Currently:
+                            // 1. Randomly generate x and y for a circle
+                            // 2. Verify it's a legal spot
+                            // 3. If it's not and you've tried a few times, start to lower the radius
+                            // 4. If you've lowered the radius multiple times and tried a lot of times, game ends
+
                             if (numTries > 35) {
                                 if (radius > 20) {
                                     radius--;
@@ -87,6 +110,7 @@ public class Game extends Activity implements View.OnTouchListener{
                         }
                         createNewCircle(x, y, radius);
 
+                        // Move this to graphics?
                         runOnUiThread(new Runnable() {
                             public void run() {
                                 playScreen.invalidate();
@@ -97,6 +121,8 @@ public class Game extends Activity implements View.OnTouchListener{
                         e.printStackTrace();
                     }
                 }
+                // Does this have any impact? Requires testing
+                return;
             }
         };
 
@@ -132,7 +158,7 @@ public class Game extends Activity implements View.OnTouchListener{
 
     public void createNewCircle(int x, int y, int radius) {
         newRect = new Rect(x - radius, y + radius, x + radius, y - radius);
-        gameGraphics.drawOutlineRectangle(newRect);
+        gameGraphics.drawOutlineRectangle(newRect, isPowerUpOn());
         gameState.getRectangleList().add(newRect);
         gameGraphics.drawCircle(x, y, radius);
     }

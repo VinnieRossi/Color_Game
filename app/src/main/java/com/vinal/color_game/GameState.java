@@ -49,14 +49,10 @@ public class GameState {
         //finalAmount *= 20; // For debugging purposes
         previousScore = score;
         score += finalAmount;
-        //if (shouldAddLife(score, finalAmount)) {
-        //    addLife(1);
-        //}
     }
 
     public boolean shouldAddLife() {
         // If you just hit 10k or 25k points
         return previousScore < 10000 && score >= 10000 || previousScore < 25000 && score >= 25000;
-        //return ((score > 10000 && score - finalAmount < 10000) || (score > 25000 && score - finalAmount < 25000));
     }
 }
